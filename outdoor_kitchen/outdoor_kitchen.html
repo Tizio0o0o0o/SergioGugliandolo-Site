@@ -2,17 +2,11 @@
 <style>
 	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
 	.pdf-container {
-		width: 800px;
-		height: 500px;
 		overflow: auto;
-		border: 1px solid #ddd;
-		border-radius: 4px;
 	}
 	.iframe-container {
-		width: 800px;
-		height: 500px;
-		border: 1px solid #ddd;
-		border-radius: 4px;
+		display: block;
+		border: 0;
 	}
 </style>
 <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
@@ -103,42 +97,43 @@
 				</nav>
 			</div>
 		</header>
-		<main class="container mx-auto">
-			<div>
-				<div class="iframe-container w-full h-screen mt-5">
+		<main class="container m-8 mx-auto">
+			<div class="mx-auto">
+				<div class="iframe-container w-11/12 h-screen mx-auto">
 					<iframe
 						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e4309d7e1c11d842f03"
 						class="w-full h-full"
 					></iframe>
 				</div>
 			</div>
-			<h2 class="text-gray-900 mt-5">Step one:</h2>
-			<p>
+			<h2 class="text-gray-900 w-full m-5">Step one:</h2>
+			<p class="text-gray-900 w-full m-5">
 				This project is a custom request from a client that, in limited space,
 				wanted to create an outdoor kitchen. After understanding all needs of
 				the client I provided 3D model of the project and, after many versions
 				the 3d model is ready.
 			</p>
-			<h2>Step two:</h2>
-			<p>
+			<h2 class="text-gray-900 w-full m-5">Step two:</h2>
+			<p class="text-gray-900 w-full m-5">
 				To speed up the process a list af all pieces nedeed was provided to a
 				woodworker and in 2 days the pieces were at destination and ready to
 				assemble.
 			</p>
-			<h2>Step three:</h2>
-			<p>
+			<h2 class="text-gray-900 w-full m-5">Step three:</h2>
+			<p class="text-gray-900 w-full m-5">
 				The puzzle has been assembled and the outdoor kitchen is ready to be
 				used.
 			</p>
-			<div class="pdf-container mt-5 w-full h-screen">
+			<div class="pdf-container mt-5 w-11/12 h-screen mx-auto">
 				<object
 					data="outdoor_kitchen.pdf"
 					type="application/pdf"
 					class="w-full h-full"
 				>
-					<p>
-						Your browser does not support PDFs. Download the PDF to view it:
-						<a href="outdoor_kitchen.pdf">Download PDF</a>.
+					<p class="text-red-600 w-full mx-auto">
+						I'm sorry, your browser does not support PDFs. Download the PDF to
+						view it:
+						<a href="outdoor_kitchen.pdf" class="font-bold">Download PDF</a>
 					</p>
 				</object>
 			</div>
