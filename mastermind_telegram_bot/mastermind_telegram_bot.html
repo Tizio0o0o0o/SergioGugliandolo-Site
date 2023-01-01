@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<style>
+	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
+</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tizio0o0o0o</title>
+	<link
+		href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+		rel="stylesheet"
+	/>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/highlight.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/python.min.js"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+</head>
+<html lang="en">
+	<body class="bg-slate-300">
+		<header class="bg-white py-4 shadow-md">
+			<div class="container mx-auto flex items-center justify-between px-4">
+				<div>
+					<a href="../projects.html" class="font-bold text-2xl text-gray-900">
+						Projects</a
+					>
+					<a
+						href="mastermind_telegram_bot.html"
+						class="font-bold text-2xl text-gray-900"
+					>
+						&roarr; Mastermind telegram bot</a
+					>
+				</div>
+				<nav>
+					<ul class="flex items-center">
+						<li>
+							<a
+								href="../home.html"
+								class="px-2 py-2 font-bold rounded-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+							>
+								Home
+							</a>
+						</li>
+						<li>
+							<a
+								href="../projects.html"
+								class="px-2 py-2 font-bold rounded-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+							>
+								Projects
+							</a>
+						</li>
+						<li>
+							<button
+								class="peer px-2 py-2 font-bold rounded-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+							>
+								Contact
+							</button>
+							<div
+								class="hidden peer-hover:flex hover:flex origin-top-right absolute rounded-md shadow-lg"
+							>
+								<div class="rounded-md bg-white shadow-xs">
+									<a
+										href="mailto:info@tizio0o0o0o.tk"
+										target="_blank"
+										class="block px-4 py-2 text-sm leading-5 flex-row text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
+									>
+										Mail
+										<img
+											src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gmail_Icon.png/600px-Gmail_Icon.png"
+											alt="Gmail logo"
+											width="20"
+											class="mr-3 align-middle"
+										/>
+									</a>
+									<a
+										href="https://www.linkedin.com/in/sergio-gugliandolo/"
+										target="_blank"
+										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
+									>
+										Linkedin
+										<img
+											src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+											alt="Linkedin logo"
+											width="20"
+											class="mr-3 align-middle"
+										/>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="container m-8 mx-auto w-10/12">
+			<div class="flex flex-wrap">
+				<div class="md:w-3/12 mx-auto align-middle">
+					<p class="text-gray-900 mt-10 mx-5 align-middle">
+						Have you ever played Mistermind? It's a cool little game from 1970
+						that still takes me every time I open that little box.
+					</p>
+					<p class="text-gray-900 mt-5 mx-5 align-middle">
+						Nowdays noone plays with real game, they are inpratical to carry
+						around and not smar enought for younger people but... we might have
+						found the solution. Do you like telegram? Now you can build it
+						yourself taking a look at this code or, if you prefer, you can play
+						Mastermind chatting with a telegram bot. Just talk to
+						<a
+							href="https://t.me/mastermind_CS_bot"
+							target="_blank"
+							class="font-bold underline text-gray-900"
+							>@mastermind_CS_bot</a
+						>
+						. It should be online and ready to be used, if not... I'm sorry,
+						maibe a bug has been found and I'm solving it. Please be patient.
+					</p>
+				</div>
+				<pre
+					class="overflow-auto bg-black max-h-screen p-5 md:w-9/12 mx-auto align-middle"
+				><code class="python hljs text-white">
+				<script>
+					var xhr = new XMLHttpRequest();
+					xhr.onload = function() {
+						document.querySelector('pre code').textContent = this.responseText;
+					}
+					xhr.open('GET', 'https://raw.githubusercontent.com/Tizio0o0o0o/Mastermind_TelegramBot/main/Main.py');
+					xhr.send();
+				</script>
+			</code></pre>
+			</div>
+		</main>
+		<footer class="bg-gray-900 text-white py-4 flex justify-between">
+			<div class="flex items-center mx-5">
+				<a href="#top" class="btn btn-secondary"> &uuarr; </a>
+			</div>
+			<div class="container mx-auto px-4 text-center text-gray-500">
+				Copyright &copy; 2023 Tizio0o0o0o
+			</div>
+		</footer>
+	</body>
+</html>
