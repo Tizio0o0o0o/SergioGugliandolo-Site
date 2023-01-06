@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<style>
+	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
+	.iframe-container {
+		display: block;
+		border: 0;
+	}
+</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sergio Gugliandolo</title>
+	<link
+		href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+		rel="stylesheet"
+	/>
+	<link rel="icon" type="image/png" sizes="16x16" href="../Logo.png" />
+</head>
+<html lang="en">
+	<body class="bg-slate-300">
+		<header class="bg-white py-4 shadow-md">
+			<div class="container mx-auto flex items-center justify-between px-4">
+				<div>
+					<a href="../home.html" class="font-bold text-2xl text-gray-900"
+						>Sergio Gugliandolo</a
+					>
+					<a class="font-bold text-2xl text-gray-900">&roarr;</a>
+					<a
+						href="mastermind_telegram_bot.html"
+						class="font-bold text-2xl text-gray-900"
+					>
+						Analog-Digital photo frame
+					</a>
+				</div>
+				<nav>
+					<ul class="flex items-center">
+						<li>
+							<a
+								href="../home.html"
+								class="px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+							>
+								Home
+							</a>
+						</li>
+						<li>
+							<a
+								href="../projects.html"
+								class="px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+							>
+								Projects
+							</a>
+						</li>
+						<li>
+							<button
+								class="peer px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+							>
+								Contact
+							</button>
+							<div
+								class="hidden peer-hover:flex hover:flex origin-top-right absolute rounded-md shadow-lg"
+							>
+								<div class="rounded-md bg-white shadow-xs">
+									<a
+										href="mailto:gugliandolosergio@gmail.com"
+										target="_blank"
+										class="block px-4 py-2 text-sm leading-5 flex-row text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
+									>
+										Mail
+										<img
+											src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gmail_Icon.png/600px-Gmail_Icon.png"
+											alt="Gmail logo"
+											width="20"
+											class="mr-3 align-middle"
+										/>
+									</a>
+									<a
+										href="https://www.linkedin.com/in/sergio-gugliandolo/"
+										target="_blank"
+										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
+									>
+										Linkedin
+										<img
+											src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+											alt="Linkedin logo"
+											width="20"
+											class="mr-3 align-middle"
+										/>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="container m-8 mx-auto w-10/12">
+			<div class="flex flex-wrap">
+				<div class="w-full mx-auto my-2 align-middle">
+					<p class="text-gray-900 align-middle">
+						An easy robotic way to go through your printed photos automatically
+					</p>
+					<p class="text-gray-900 mt-5 align-middle">
+						Thanks to a smartphone you can go through your photos instantly,
+						everywhere and every time. Unfortunately, this makes us lose that
+						unique feeling: print memories and make them last forever. Somebody
+						could confute that this is just a way to store useless and bulky
+						stuff, but I found the way to give a "new life" to tons of photos
+						forgotten in the basement.
+					</p>
+					<p class="text-gray-900 mt-5 align-middle">
+						I uploaded all versions of my project because I would like to
+						explain you the entire process from the idea itself.
+					</p>
+					<p class="text-gray-500 mt-5 mb-10 align-middle">
+						NOTE: none of this version is yet optimized for 3D printing (or any
+						crating process), I will do that after we solve problems that we are
+						able to see in the 3D model. Every version has a list of problems
+						that I noticed, but the last option is always "..." to encourage you
+						to find more, thank you for your collaboration: write me if you
+						think you can help me or even just to ask questions about it. I will
+						appreciate it.
+					</p>
+				</div>
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e43c12e6dc13a88b0c6"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<div class="md:w-3/12 mx-auto my-2 align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V1
+					</h2>
+					<p class="text-gray-900 mt-2 mx-5 align-middle">
+						I thought that using two different frames was easier, so I decided
+						that the frame had to be equipped with a small robot arm (with 9g
+						servo motors) and a suction cup. The arm is long enough to reach the
+						middle line of the picture box, take one photo with the suction cup
+						(and a small 9g motor with a syringe to create vacuum) and position
+						the photo in the other side of the frame. In this way all the photos
+						are shown and (theoretically) it should work.
+					</p>
+					<h2 class="font-bold text-gray-900 mt-5 mx-5 align-middle">
+						Problems:
+					</h2>
+					<ul class="text-gray-900 mt-2 mx-5 align-middle">
+						<li>&SmallCircle; very big;</li>
+						<li>
+							&SmallCircle; the photos in the middle of the column are shown
+							more frequently than the ones at the beginning and at the end;
+						</li>
+						<li>
+							&SmallCircle; too many motors [6] (many things can go wrong, I
+							would like to keep is simple, and it would be too noisy);
+						</li>
+						<li>&SmallCircle; ...</li>
+					</ul>
+				</div>
+				<hr class="w-full border-slate-400" />
+				<div class="md:w-3/12 mx-auto my-2 align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V2
+					</h2>
+					<p class="text-gray-900 mt-2 mx-5 align-middle">
+						The idea was to create something able to take the first photo and
+						place it under the column of photos. In this way each photo will be
+						shown just once every cycle, solving the 1st problem of the previous
+						version. I thought about using a long linear actuator with a rubber
+						piece at the end that could drag the first photo down the pile. A
+						small ramp (in the frame) could leave the space for the entrance of
+						the photo under the pile and the arm could push the photo. In this
+						way only 3 motor were used, solving the 3rd problem.
+					</p>
+					<h2 class="font-bold text-gray-900 mt-5 mx-5 align-middle">
+						Problems:
+					</h2>
+					<ul class="text-gray-900 mt-2 mx-5 align-middle">
+						<li>&SmallCircle; very big;</li>
+						<li>&SmallCircle; how should the design be completed?;</li>
+						<li>&SmallCircle; will it work in a nearly vertical position?;</li>
+						<li>&SmallCircle; ...</li>
+					</ul>
+				</div>
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e430f7538c77b598e84"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<hr class="w-full border-slate-400" />
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e43c8851a2268aaab2d"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<div class="md:w-3/12 mx-auto my-2 align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V3
+					</h2>
+					<p class="text-gray-900 mt-2 mx-5 align-middle">
+						3rd and 4th problems pushed me to think about a new version, without
+						wasting more time. I thought about adding a moving-bridge style
+						actuator, to take the photo from the top of the pile (with vacuum
+						gripper) and put it where the linear actuated arm (as in V2) will be
+						able to push it under the pile.
+					</p>
+					<h2 class="font-bold text-gray-900 mt-5 mx-5 align-middle">
+						Problems:
+					</h2>
+					<ul class="text-gray-900 mt-2 mx-5 align-middle">
+						<li>&SmallCircle; very big;</li>
+						<li>
+							&SmallCircle; too many motors [6] (many things can go wrong, I
+							would like to keep is simple, and it would be too noisy);
+						</li>
+						<li>&SmallCircle; ...</li>
+					</ul>
+				</div>
+				<hr class="w-full border-slate-400" />
+				<div class="md:w-3/12 mx-auto my-2 align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V4
+					</h2>
+					<p class="text-gray-900 mt-2 mx-5 align-middle">
+						the V3 pushed me to think again about the V1, a moving-bridge stile
+						actuator could solve the 3rd problem (the worst). So I decided to
+						give it a possibility.
+					</p>
+					<h2 class="font-bold text-gray-900 mt-5 mx-5 align-middle">
+						Problems:
+					</h2>
+					<ul class="text-gray-900 mt-2 mx-5 align-middle">
+						<li>&SmallCircle; very big;</li>
+						<li>
+							&SmallCircle; the photos in the middle of the column are shown
+							more frequently than the ones at the beginning and at the end;
+						</li>
+						<li>&SmallCircle; ...</li>
+					</ul>
+				</div>
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e43467148a73115f123"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<hr class="w-full border-slate-400" />
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH919a0QTf3c32634dcfb45993f0559395db"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<div class="md:w-3/12 mx-auto my-2 align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V5
+					</h2>
+					<p class="text-gray-900 mt-2 mx-5 align-middle">
+						I think that using 2 mm plexiglass as the main material may "solve"
+						the 1st problem of all designs: transparent material might make the
+						project look smaller than it really is. As suggested from you, I've
+						also added a "single sided bridge" instead of the big one of the
+						previous design. I really like this idea, but I'm not sure about the
+						strength of my design. Two boxed (probably made out of plastic, to
+						hide cables and electronics) were added.
+					</p>
+					<h2 class="font-bold text-gray-900 mt-5 mx-5 align-middle">
+						Problems:
+					</h2>
+					<ul class="text-gray-900 mt-2 mx-5 align-middle">
+						<li>&SmallCircle; big;</li>
+						<li>
+							&SmallCircle; the photos in the middle of the column are shown
+							more frequently than the ones at the beginning and at the end;
+						</li>
+						<li>&SmallCircle; strong enough?;</li>
+						<li>&SmallCircle; ...</li>
+					</ul>
+				</div>
+				<hr class="w-full border-slate-400" />
+				<div class="md:w-3/12 mx-auto my-2 align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V6
+					</h2>
+					<p class="text-gray-900 mt-2 mx-5 align-middle">
+						The strength problem was solved: I added 3D printed linear bearings
+						and 8mm metal rod to slide on. I also decided to change the motors:
+						28BYJ-48 stepper motor are still cheap, but more quiet and precise
+						than 9g servo. I also added a 503012 hall effect sensor and a
+						magnet, to have an absolute position of the actuators. I'm really
+						satisfied by this design, but I still have to figure out how to add
+						a suction cup: I think that the syringe method has too many
+						weaknesses.
+					</p>
+					<h2 class="font-bold text-gray-900 mt-5 mx-5 align-middle">
+						Problems:
+					</h2>
+					<ul class="text-gray-900 mt-2 mx-5 align-middle">
+						<li>&SmallCircle; big;</li>
+						<li>
+							&SmallCircle; the photos in the middle of the column are shown
+							more frequently than the ones at the beginning and at the end;
+						</li>
+						<li>&SmallCircle; how should the suction cup be?;</li>
+						<li>&SmallCircle; ...</li>
+					</ul>
+				</div>
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH919a0QTf3c32634dcf2fbee006fa3bc184"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<hr class="w-full border-slate-400" />
+				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+					<iframe
+						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e436c5004464f8739b2"
+						class="w-full h-full"
+					></iframe>
+				</div>
+				<div class="md:w-3/12 mx-auto align-middle">
+					<h2 class="font-bold text-xl text-gray-900 mt-5 mx-5 align-middle">
+						V7
+					</h2>
+					<div class="work-in-progress w-full m-5 h-auto">
+						<img
+							src="../work-in-progress.png"
+							alt="Work in progress logo"
+							class="w-full h-auto"
+						/>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="bg-gray-900 text-white py-4 flex justify-between">
+			<div class="flex items-center mx-5">
+				<a href="#top" class="btn btn-secondary"> &uuarr; </a>
+			</div>
+			<div class="container mx-auto px-4 text-center text-gray-500">
+				Copyright &copy; 2023 Sergio Gugliandolo
+			</div>
+		</footer>
+		<script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
