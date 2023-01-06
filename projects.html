@@ -12,6 +12,18 @@
 		padding: 10px;
 		text-align: center;
 	}
+	.project-image-container {
+		position: relative;
+	}
+	.work-in-progress {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		z-index: 1;
+	}
 </style>
 <head>
 	<meta charset="UTF-8" />
@@ -102,21 +114,28 @@
 				<div class="grid">
 					<a
 						href="outdoor_kitchen/outdoor_kitchen.html"
-						class="3d_modelling p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+						class="project-image-container p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
 					>
 						<img
 							src="outdoor_kitchen/outdoor_kitchen-01.png"
 							alt="Placeholder image"
 							class="w-full h-auto"
 						/>
+						<div class="work-in-progress w-2/6 m-5 h-auto">
+							<img
+								src="work-in-progress.png"
+								alt="Work in progress logo"
+								class="w-full h-auto"
+							/>
+						</div>
 						<h2 class="text-gray-900 mt-4">Outdoor Kitchen</h2>
 					</a>
 					<a
 						href="mastermind_telegram_bot/mastermind_telegram_bot.html"
-						class="programming p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+						class="project-image-container p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
 					>
 						<img
-							src="mastermind_telegram_bot/mastermind-01.jpg"
+							src="mastermind_telegram_bot/mastermind-01.png"
 							alt="Placeholder image"
 							class="w-full h-auto"
 						/>
@@ -124,7 +143,7 @@
 					</a>
 					<a
 						href="river_epoxy_metal_extendable_table/river_epoxy_metal_extendable_table.html"
-						class="p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+						class="project-image-container p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
 					>
 						<img
 							src="river_epoxy_metal_extendable_table/river_epoxy_metal_extendable_table-02.jpg"
@@ -133,27 +152,18 @@
 						/>
 						<h2 class="text-gray-900 mt-4">
 							River Epoxy Metal extendable table
-						</h2> </a
-					><a
+						</h2>
+					</a>
+					<a
 						href="#"
-						class="p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+						class="project-image-container p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
 					>
 						<img
-							src="https://via.placeholder.com/600x400"
+							src="work-in-progress.png"
 							alt="Placeholder image"
 							class="w-full h-auto"
 						/>
-						<h2 class="text-gray-900 mt-4">To be done</h2> </a
-					><a
-						href="#"
-						class="p-10 font-bold rounded-3xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
-					>
-						<img
-							src="https://via.placeholder.com/600x400"
-							alt="Placeholder image"
-							class="w-full h-auto"
-						/>
-						<h2 class="text-gray-900 mt-4">To be done</h2>
+						<h2 class="text-gray-900 mt-4">Work in progress</h2>
 					</a>
 				</div>
 			</div>
