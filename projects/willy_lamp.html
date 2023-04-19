@@ -111,7 +111,7 @@
 		</header>
 		<main class="container m-8 mx-auto w-10/12">
 			<div class="flex flex-wrap">
-				<div class="md:w-3/12 mx-auto my-2 align-middle">
+				<div class="md:w-5/12 mx-auto my-2 align-middle">
 					<p class="text-gray-900 mx-5 align-middle">
 						You surely have seen a lamp like this online. In my opinion it's
 						cool and also a little bit extreme: I like it!
@@ -123,9 +123,10 @@
 						should do the trick.
 					</p>
 					<p class="text-gray-900 mt-3 mx-5 align-middle">
-						I don't want to mess with high voltage, at least for this first
-						version (maybe I'll continue with a second one), a 5 volt led strip
-						will be more than enough for my needs.
+						I don't want to mess with high voltage to keep the project safe and
+						easily replicable so a 5 volt led ring will be more than enough for
+						my needs. This will have the plus side of being able to use a 5 volt
+						phone charger as power supply.
 					</p>
 					<p class="text-gray-900 mt-3 mx-5 align-middle">
 						The design is optimized to be 3D printed:
@@ -139,7 +140,27 @@
 						</li>
 					</ul>
 				</div>
-				<div class="iframe-container w-full h-screen md:w-9/12 my-2 mx-auto">
+				<div class="relative w-full h-fit md:w-7/12 my-2 mx-auto">
+					<img
+						src="willy_lamp/willy_lamp-01.png"
+						class="max-h-screen w-auto object-cover rounded-md mx-auto"
+						alt="Willy lamp image"
+						id="photo"
+					/>
+					<button
+						class="absolute py-20 px-3 top-0 left-0 h-full flex items-center"
+						id="leftButton"
+					>
+						<div class="text-black font-bold w-2/12">&LeftTriangle;</div>
+					</button>
+					<button
+						class="absolute py-20 px-3 top-0 right-0 h-full flex items-center"
+						id="rightButton"
+					>
+						<div class="text-black font-bold w-2/12">&RightTriangle;</div>
+					</button>
+				</div>
+				<div class="iframe-container w-full h-screen my-2 mx-auto">
 					<iframe
 						src="https://gmail765233.autodesk360.com/g/shares/SH35dfcQT936092f0e43d31a1db1c23a779b"
 						class="w-full h-full"
@@ -157,5 +178,41 @@
 		</footer>
 		<script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				const photos = [
+					"willy_lamp/willy_lamp-01.png",
+					"willy_lamp/willy_lamp-02.png",
+					"willy_lamp/willy_lamp-03.png",
+					"willy_lamp/willy_lamp-04.png",
+					"willy_lamp/willy_lamp-05.png",
+					"willy_lamp/willy_lamp-04.png",
+					"willy_lamp/willy_lamp-03.png",
+					"willy_lamp/willy_lamp-02.png",
+				];
+				let currentPhoto = 0;
+				let intervalId;
+				const photo = document.getElementById("photo");
+				const leftButton = document.getElementById("leftButton");
+				const rightButton = document.getElementById("rightButton");
+
+				intervalId = setInterval(() => {
+					currentPhoto = (currentPhoto + 1) % photos.length;
+					photo.src = photos[currentPhoto];
+				}, 300);
+
+				leftButton.addEventListener("click", () => {
+					clearInterval(intervalId);
+					currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
+					photo.src = photos[currentPhoto];
+				});
+
+				rightButton.addEventListener("click", () => {
+					clearInterval(intervalId);
+					currentPhoto = (currentPhoto + 1) % photos.length;
+					photo.src = photos[currentPhoto];
+				});
+			});
+		</script>
 	</body>
 </html>
