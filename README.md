@@ -1,6 +1,10 @@
 # Welcome to my website repository!
 
+<<<<<<< HEAD
 In this repository, you will find all the files and documents related to my website: https://sergiogugliandolo.com/. It's a place where I can share my passion for web development and showcase my work. I have created this website with enthusiasm and excitement, and I am looking forward to keep improving it.
+=======
+In this repository, you will find all the files and documents related to my website: https://sergiogugliandolo.it/. It's a place where I can share my passions and showcase my work. I have created this website with enthusiasm and excitement, and I am looking forward to keep improving it.
+>>>>>>> 6b91215edf6f0fd44fc53bcaabd3bebbbdd93723
 
 I would be thrilled to receive help and suggestions from other developers. However, please keep in mind that I am still learning and I would appreciate it if you could keep the changes simple.
 
