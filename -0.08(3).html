@@ -399,7 +399,8 @@
 			const answerField2 = document.querySelector(".answer_field_2");
 			const question3 = document.querySelector(".question_3");
 			const number1Question3 = "infinity";
-			const number2Question3 = "-0.08(3)";
+			const number2Question3 = "infinite";
+			const number3Question3 = "-0.08(3)";
 			const answerSubmit3 = document.querySelector(".answer_submit_3");
 			const answerQuestion3 = document.querySelector(".answer_question_3");
 			const answerField3 = document.querySelector(".answer_field_3");
@@ -459,10 +460,10 @@
 			function checkAnswer3() {
 				const userInput = answerField3.value;
 				questionsSkip.style.visibility = "hidden";
-				if (userInput === number1Question3) {
+				if (userInput === number1Question3 || userInput === number2Question3) {
 					lastResult.textContent =
 						"Correct! The right answer is 'infinity'!... or is it?";
-				} else if (userInput === number2Question3) {
+				} else if (userInput === number3Question3) {
 					lastResult.textContent =
 						"Yesss that's what I wanted, I like you! But... is this really this the correct answer?";
 				} else {
