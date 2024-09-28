@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<style>
+	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-gap: 5px;
+	}
+	.grid > div {
+		background-color: #eee;
+		border-radius: 4px;
+		padding: 10px;
+		text-align: center;
+	}
+</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sergio Gugliandolo</title>
+	<meta property="og:title" content="Sergio Gugliandolo" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://sergiogugliandolo.com/" />
+	<meta property="og:description" content="QR" />
+	<meta
+		property="og:image"
+		content="https://sergiogugliandolo.com/img/Logo.png"
+	/>
+	<link
+		href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+		rel="stylesheet"
+	/>
+	<link rel="icon" type="image/png" sizes="500x500" href="img/Logo.png" />
+</head>
+<html lang="en">
+	<body class="flex flex-col h-screen bg-slate-300">
+		<header class="flex-shrink-0 bg-white pb-4 shadow-md">
+			<img
+				class="max-lg:w-full max-xl:w-9/12 w-8/12 mx-auto mt-0"
+				src="img/IMG_01.jpeg"
+				alt="Sergio Gugliandolo img"
+			/>
+			<h1 class="text-center text-4xl font-bold mt-4">Sergio Gugliandolo</h1>
+			<p class="text-center mt-8 mx-8 lg:w-8/12 lg:mx-auto">
+				Click on any QR codes to see them in full size.
+			</p>
+		</header>
+		<main class="flex-grow min-h-fit text-justify container mx-auto my-6 px-4">
+			<div class="grid">
+				<a
+					href="img/QR.png"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img src="img/QR.png" alt="QR" class="w-2/12 h-auto" />
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						QR minimal
+					</h3>
+				</a>
+				<a
+					href="img/QRfull.png"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img src="img/QRfull.png" alt="QR" class="w-2/12 h-auto" />
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						QR full
+					</h3>
+				</a>
+				<a
+					href="img/QRBrainTex.png"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img src="img/QRBrainTex.png" alt="QR" class="w-2/12 h-auto" />
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						QR BrainTex
+					</h3>
+				</a>
+			</div>
+		</main>
+		<footer
+			class="flex-shrink-0 bg-gray-900 text-white py-4 flex justify-between"
+		>
+			<div class="flex items-center mx-5">
+				<a href="#top" class="btn btn-secondary"> &uuarr; </a>
+			</div>
+			<div class="container mx-auto px-4 text-center text-gray-500">
+				<a
+					href="https://github.com/Tizio0o0o0o/SergioGugliandolo-Site/blob/main/LICENSE"
+					target="_blank"
+					>GNU General Public License (GPL) v3.0</a
+				>
+			</div>
+		</footer>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
