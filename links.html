@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <style>
 	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
 	.grid {
@@ -11,6 +11,17 @@
 		border-radius: 4px;
 		padding: 10px;
 		text-align: center;
+	}
+	.section-title {
+		text-align: center;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: #475569;
+		margin: 1.75rem 0 0.5rem;
+	}
+	.section-title:first-of-type {
+		margin-top: 0.25rem;
 	}
 </style>
 <head>
@@ -71,6 +82,8 @@
 			</p>
 		</header>
 		<main class="flex-grow min-h-fit text-justify container mx-auto my-6 px-4">
+			<!-- ===== Me / portfolio ===== -->
+			<h2 class="section-title">Me</h2>
 			<div class="grid">
 				<a
 					href="home.html"
@@ -88,6 +101,20 @@
 					</h3>
 				</a>
 				<a
+					href="SergioGugliandoloCV.pdf"
+					target="_blank"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/2/25/Acroread.svg"
+						alt="PDF logo"
+						class="w-2/12 h-auto"
+					/>
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						CV
+					</h3>
+				</a>
+				<a
 					href="https://www.linkedin.com/in/sergio-gugliandolo/"
 					target="_blank"
 					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
@@ -102,26 +129,12 @@
 					</h3>
 				</a>
 				<a
-					href="SergioGugliandoloCV.pdf"
-					target="_blank"
-					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
-				>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Acroread.svg/800px-Acroread.svg.png"
-						alt="PDF logo"
-						class="w-2/12 h-auto"
-					/>
-					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
-						CV
-					</h3>
-				</a>
-				<a
 					href="https://github.com/Tizio0o0o0o"
 					target="_blank"
 					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
 				>
 					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715"
+						src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
 						alt="GitHub logo"
 						class="w-2/12 h-auto"
 					/>
@@ -129,6 +142,59 @@
 						GitHub
 					</h3>
 				</a>
+				<a
+					href="https://www.instructables.com/member/gugliandolosergio/"
+					target="_blank"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img
+						src="https://www.instructables.com/assets/img/instructables-logo-v2.png"
+						alt="Instructables logo"
+						class="w-2/12"
+					/>
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						Instructables
+						<p class="text-center text-xs">
+							Some old projects received many views in this platform
+						</p>
+					</h3>
+				</a>
+			</div>
+
+			<!-- ===== Ventures ===== -->
+			<h2 class="section-title">Ventures</h2>
+			<div class="grid">
+				<a
+					href="https://braintex.it"
+					target="_blank"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img src="img/tmp.png" alt="BrainTex logo" class="w-2/12 h-auto" />
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						BrainTex
+						<p class="text-center text-xs">Startup I'm Co-founder and CPO of</p>
+					</h3>
+				</a>
+				<a
+					href="https://linktr.ee/team.ISAAC.polito"
+					target="_blank"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img
+						src="https://ugc.production.linktr.ee/5fe9595a-fb26-46cb-b7e7-83a5f971f533_Logo.png?io=true&size=thumbnail-stack-v1_0"
+						alt="ISAAC team logo"
+						class="w-2/12 h-auto"
+					/>
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						Team ISAAC
+						<p class="text-center text-xs">University team I manage</p>
+					</h3>
+				</a>
+			</div>
+
+			<!-- ===== Get in touch ===== -->
+			<h2 class="section-title">Get in touch</h2>
+			<div class="grid">
 				<a
 					href="https://t.me/Tizio0o0o0o"
 					target="_blank"
@@ -172,7 +238,7 @@
 					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
 						PoliTo mail
 						<p class="text-center text-xs">
-							My Polytechnic of Turin mail<br />I will reply within 48 hours
+							My Polytechnic of Turin mail<br />I will reply within 72 hours
 						</p>
 					</h3>
 				</a>
@@ -191,49 +257,11 @@
 						<p class="text-center text-xs">To schedule a meeting with me</p>
 					</h3>
 				</a>
-				<a
-					href="https://braintex.it"
-					target="_blank"
-					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
-				>
-					<img src="img/tmp.png" alt="BrainTex logo" class="w-2/12 h-auto" />
-					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
-						BrainTex
-						<p class="text-center text-xs">Startup I'm a founder of</p>
-					</h3>
-				</a>
-				<a
-					href="https://linktr.ee/team.ISAAC.polito"
-					target="_blank"
-					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
-				>
-					<img
-						src="https://ugc.production.linktr.ee/5fe9595a-fb26-46cb-b7e7-83a5f971f533_Logo.png?io=true&size=thumbnail-stack-v1_0"
-						alt="ISAAC team logo"
-						class="w-2/12 h-auto"
-					/>
-					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
-						Team ISAAC
-						<p class="text-center text-xs">University team I manage</p>
-					</h3>
-				</a>
-				<a
-					href="https://www.instructables.com/member/gugliandolosergio/"
-					target="_blank"
-					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
-				>
-					<img
-						src="https://sharewithus.co.nz/wp-content/uploads/2021/01/instructables-logo-v2-229x300.png"
-						alt="Instructables logo"
-						class="w-2/12"
-					/>
-					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
-						Instructables
-						<p class="text-center text-xs">
-							Some old projects received many views in this platform
-						</p>
-					</h3>
-				</a>
+			</div>
+
+			<!-- ===== Buy me a coffee ☕❤️ ===== -->
+			<h2 class="section-title">Buy me a coffee ☕❤️</h2>
+			<div class="grid">
 				<a
 					href="https://paypal.me/gugliandolosergio?country.x=IT&locale.x=it_IT"
 					target="_blank"
@@ -246,9 +274,20 @@
 					/>
 					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
 						Paypal
-						<p class="text-center text-xs">
-							If you want to buy me a coffee ☕❤️
-						</p>
+					</h3>
+				</a>
+				<a
+					href="https://web.satispay.com/download/qrcode/S6Y-CON--56AE3285-209A-4EDA-8CB5-CDBF22466CD8"
+					target="_blank"
+					class="p-4 flex items-center font-bold rounded-3xl shadow-2xl hover:bg-slate-400 focus:outline-none focus:bg-slate-300 transition duration-150 ease-in-out"
+				>
+					<img
+						src="https://cdn.brandfetch.io/idb306-7hk/w/230/h/230/theme/dark/id4cpCTJeb.png"
+						alt="Satispay logo"
+						class="w-2/12 rounded-lg"
+					/>
+					<h3 class="w-10/12 text-center bottom-text text-gray-900 bottom-0">
+						Satispay
 					</h3>
 				</a>
 			</div>
