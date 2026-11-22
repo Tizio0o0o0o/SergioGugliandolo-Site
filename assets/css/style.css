@@ -4,7 +4,7 @@
    1. Fonts            7. Buttons, chips, badges
    2. Design tokens    8. Cards
    3. Base             9. Page sections (home, projects, project,
-   4. Background          links, braintex, qr, sum, error)
+   4. Background          links, qr, sum, error)
    5. Layout          10. Overlays (lightbox, qr, toast)
    6. Header/footer   11. Motion + utilities
    Colors live in section 2: change them there and the whole site follows.
@@ -1979,23 +1979,7 @@ a.chip {
 	word-break: break-word;
 }
 
-/* ---------- 9f. BrainTex page ---------- */
-.bt-title {
-	display: flex;
-	align-items: center;
-	gap: clamp(0.8rem, 2vw, 1.2rem);
-	margin: 1rem 0 0.8rem;
-}
-.bt-title img {
-	width: clamp(46px, 7vw, 66px);
-	height: auto;
-	flex: none;
-	filter: drop-shadow(0 8px 20px rgba(36, 98, 184, 0.25));
-}
-.bt-title h1 {
-	margin: 0;
-	font-size: clamp(2rem, 4.6vw, 3.4rem);
-}
+/* ---------- 9f. Before/after slider + team chips (BrainTex) ---------- */
 .compare {
 	position: relative;
 	aspect-ratio: 1;
@@ -2081,62 +2065,11 @@ a.chip {
 	text-align: center;
 	margin-top: 0.7rem;
 }
-.role-grid {
-	display: grid;
-	gap: clamp(1.5rem, 4vw, 3rem);
-	grid-template-columns: 1fr;
-	align-items: start;
+.after-gallery {
+	margin-top: 2rem;
 }
-@media (min-width: 900px) {
-	.role-grid {
-		grid-template-columns: 0.8fr 1.2fr;
-	}
-}
-.mvp {
-	border-radius: var(--radius-lg);
-	overflow: hidden;
-	box-shadow: var(--shadow-lg);
-}
-.mvp img {
-	width: 100%;
-	aspect-ratio: 3 / 3.6;
-	object-fit: cover;
-}
-.mvp figcaption {
-	padding: 0.7rem 1rem;
-	background: var(--surface);
-	font-family: var(--font-mono);
-	font-size: 0.72rem;
-	color: var(--ink-2);
-}
-.duties {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 1.4rem;
-	display: grid;
-	gap: 0.6rem;
-}
-.duties li {
-	display: flex;
-	gap: 0.9rem;
-	align-items: flex-start;
-	padding: 0.9rem 1rem;
-	border-radius: var(--radius);
-	background: var(--surface);
-	box-shadow: inset 0 0 0 1px var(--line);
-}
-.duties .i {
-	color: var(--accent);
-	margin-top: 0.15rem;
-}
-.duties b {
-	display: block;
-	font-family: var(--font-display);
-	font-weight: 600;
-}
-.duties span {
-	font-size: 0.9rem;
-	color: var(--ink-2);
+.prose .team {
+	margin: 1rem 0 1.6rem;
 }
 .team {
 	display: flex;

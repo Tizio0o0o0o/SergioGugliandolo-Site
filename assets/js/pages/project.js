@@ -7,6 +7,8 @@
 	var photoIndex = 0;
 	var versionIndex = 0;
 	var codeCache = null;
+	var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+	var hinted = false;
 
 	function photos() {
 		return (p.photos || []).map(function (f) { return App.projectImg(p, f); });
@@ -54,7 +56,7 @@
 			label = t(l.label);
 		}
 		return (
-			'<a class="btn" href="' + href + '" target="_blank" rel="noopener">' + icon(ic) +
+			'<a class="btn" href="' + href + '"' + (/^https?:/.test(href) ? ' target="_blank" rel="noopener"' : "") + ">" + icon(ic) +
 			"<span>" + label + (hint ? '<br><small class="muted" style="font-weight:400">' + hint + "</small>" : "") + "</span>" +
 			icon("arrowUpRight") + "</a>"
 		);
@@ -115,6 +117,23 @@
 		);
 	}
 
+	// before/after slider (optional "compare" field in content/projects.js)
+	function compareBlock() {
+		var c = p.compare;
+		return (
+			'<div class="reveal">' +
+			'<div class="compare" style="--pos:50%">' +
+			'<img src="' + App.projectImg(p, c.before) + '" alt="' + App.esc(t(c.beforeLabel)) + '">' +
+			'<img class="after" src="' + App.projectImg(p, c.after) + '" alt="' + App.esc(t(c.afterLabel)) + '">' +
+			'<span class="lbl l">' + t(c.beforeLabel) + '</span><span class="lbl r">' + t(c.afterLabel) + "</span>" +
+			'<div class="handle"></div>' +
+			'<input type="range" min="0" max="100" value="50" aria-label="' + App.esc(t(c.beforeLabel) + " / " + t(c.afterLabel)) + '">' +
+			"</div>" +
+			'<p class="compare-caption">' + t(c.caption) + "</p>" +
+			"</div>"
+		);
+	}
+
 	function codePeek() {
 		if (!p.code) return "";
 		return '<details class="code-peek reveal"><summary>' + icon("code") + ui("peekCode") + '</summary><pre><code>' + ui("loading") + "</code></pre></details>";
@@ -145,9 +164,11 @@
 			'<p class="lead reveal">' + t(p.tagline) + "</p>" +
 			"</section>" +
 			'<div class="project-layout">' +
-			'<div class="area-gallery">' + gallery() + "</div>" +
+			'<div class="area-gallery">' + (p.compare ? compareBlock() : gallery()) + "</div>" +
 			aside() +
-			'<div class="area-body"><div class="prose reveal">' + specs() + App.paras(p.body) + "</div>" + versions() + codePeek() + pager() + "</div>" +
+			'<div class="area-body"><div class="prose reveal">' + specs() + App.paras(p.body) + "</div>" +
+			(p.compare && p.photos && p.photos.length ? '<div class="after-gallery">' + gallery() + "</div>" : "") +
+			versions() + codePeek() + pager() + "</div>" +
 			"</div></div>"
 		);
 	}
@@ -241,11 +262,54 @@
 		});
 	}
 
+	function setupCompare(main) {
+		var box = main.querySelector(".compare");
+		if (!box) return;
+		var input = box.querySelector("input");
+		var dragging = false;
+		function set(v) {
+			v = Math.max(0, Math.min(100, v));
+			box.style.setProperty("--pos", v + "%");
+			input.value = v;
+		}
+		function fromEvent(e) {
+			var r = box.getBoundingClientRect();
+			set(((e.clientX - r.left) / r.width) * 100);
+		}
+		input.style.pointerEvents = "none"; // the box handles mouse/touch, the input handles the keyboard
+		input.addEventListener("input", function () { set(+input.value); });
+		box.addEventListener("pointerdown", function (e) {
+			dragging = true;
+			box.setPointerCapture(e.pointerId);
+			fromEvent(e);
+		});
+		box.addEventListener("pointermove", function (e) { if (dragging) fromEvent(e); });
+		box.addEventListener("pointerup", function () { dragging = false; });
+		box.addEventListener("pointercancel", function () { dragging = false; });
+		// a little wiggle the first time it's visible, to show it can be dragged
+		if (reduceMotion || hinted || !("IntersectionObserver" in window)) return;
+		var io = new IntersectionObserver(function (entries) {
+			if (!entries[0].isIntersecting) return;
+			io.disconnect();
+			hinted = true;
+			var t0 = performance.now();
+			(function step(now) {
+				if (dragging) return;
+				var k = (now - t0) / 1800;
+				if (k >= 1) return set(50);
+				set(50 + Math.sin(k * Math.PI * 2) * 28 * (1 - k));
+				requestAnimationFrame(step);
+			})(t0);
+		}, { threshold: 0.6 });
+		io.observe(box);
+	}
+
 	function after(main) {
 		if (!p) return;
 		setupGallery(main);
 		setupVersions(main);
 		setupCode(main);
+		setupCompare(main);
 	}
 
 	App.page(render, after);

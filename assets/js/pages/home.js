@@ -44,17 +44,17 @@
 	function now() {
 		return (
 			'<section class="section-tight"><div class="wrap">' +
-			'<a class="card feature ticks reveal" href="' + url("braintex") + '">' +
+			'<a class="card feature ticks reveal" href="' + url("projects/braintex") + '">' +
 			'<div class="feature-body">' +
 			'<span class="eyebrow">' + t(H.nowEyebrow) + "</span>" +
-			'<div class="feature-logo"><img src="' + asset("img/braintex/logo.webp") + '" alt="" width="52" height="52"><div><h3>BrainTex</h3>' + App.statusBadge("wip") + "</div></div>" +
+			'<div class="feature-logo"><img src="' + asset("projects/braintex/logo.webp") + '" alt="" width="52" height="52"><div><h3>BrainTex</h3>' + App.statusBadge("wip") + "</div></div>" +
 			'<p style="color:var(--ink);font-weight:600">' + t(H.nowTitle) + "</p>" +
 			"<p>" + t(H.nowText) + "</p>" +
 			'<span class="btn btn-accent btn-sm">' + t(H.nowCta) + icon("arrowRight", "i-move") + "</span>" +
 			"</div>" +
 			'<div class="scanner" aria-hidden="true">' +
-			'<img src="' + asset("img/braintex/camera.webp") + '" alt="" loading="lazy">' +
-			'<img class="detected" src="' + asset("img/braintex/detected.webp") + '" alt="" loading="lazy">' +
+			'<img src="' + asset("projects/braintex/camera.webp") + '" alt="" loading="lazy">' +
+			'<img class="detected" src="' + asset("projects/braintex/detected.webp") + '" alt="" loading="lazy">' +
 			'<div class="beam"></div><div class="hud">' + t(H.scanHud) + "</div></div>" +
 			"</a></div></section>"
 		);

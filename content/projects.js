@@ -16,6 +16,7 @@
      specs     optional little boxes with key facts
      links     optional buttons: 3D model, PDF, code, external sites
      versions  optional step-by-step history (see the photo frame)
+     compare   optional before/after slider at the top of the page (see BrainTex)
      code      optional raw file URL shown in a "peek at the code" box
 
    Writing tips for "body":
@@ -27,20 +28,78 @@ window.PROJECTS = [
 	/* ------------------------------------------------------------------ */
 	{
 		id: "braintex",
-		page: "braintex", // has its own special page
 		status: "wip",
 		years: "2024 →",
-		featured: true,
+		featured: true, // big card at the top of the projects page
 		tags: ["startup", "cad", "electronics", "team"],
-		cover: "img/braintex/detected.webp",
+		cover: "detected.webp",
 		coverFill: true,
-		photos: ["img/braintex/mvp.webp"],
+		photos: ["mvp.webp"],
+		// before/after slider shown at the top of the page (any project can have one)
+		compare: {
+			before: "camera.webp",
+			after: "detected.webp",
+			beforeLabel: { en: "What you see", it: "Cosa vedi tu" },
+			afterLabel: { en: "What BrainTex sees", it: "Cosa vede BrainTex" },
+			caption: { en: "← drag → same fabric, before and after BrainTex", it: "← trascina → stesso tessuto, prima e dopo BrainTex" },
+		},
 		title: { en: "BrainTex", it: "BrainTex" },
 		tagline: {
 			en: "The startup I co-founded: AI that finds fabric defects your eyes would miss. I'm the CPO, and the one who makes sure the hardware survives the factory floor.",
 			it: "La startup che ho co-fondato: un'IA che trova nei tessuti i difetti che all'occhio sfuggono. Sono il CPO, e quello che fa sopravvivere l'hardware in fabbrica.",
 		},
 		skill: { en: "Turning an idea into a company", it: "Trasformare un'idea in un'azienda" },
+		learned: {
+			en: [
+				"Thinking like a founder: the I3P Startup Academy (2024) took me from complete beginner to a slightly more confident one, with pitch simulations and honest feedback from mentors and founders.",
+				"Designing for customers instead of for myself: the requirements come from a factory floor, not from my curiosity.",
+				"Protecting ideas: a patent forces you to say exactly what you invented, and nothing more.",
+				"Leaving my comfort zone: a mechanical engineer running servers.",
+				"Explaining a technical product in two minutes to people who aren't engineers.",
+			],
+			it: [
+				"Ragionare da fondatore: la Startup Academy di I3P (2024) mi ha portato da principiante assoluto a principiante un po' più consapevole, tra simulazioni di pitch e feedback sinceri da mentor e founder.",
+				"Progettare per i clienti invece che per me: i requisiti arrivano da una fabbrica, non dalla mia curiosità.",
+				"Proteggere le idee: un brevetto ti obbliga a dire esattamente cosa hai inventato, e niente di più.",
+				"Uscire dalla mia zona di comfort: un ingegnere meccanico che gestisce server.",
+				"Spiegare un prodotto tecnico in due minuti a chi ingegnere non è.",
+			],
+		},
+		specs: [
+			{ k: { en: "Role", it: "Ruolo" }, v: { en: "Co-founder & CPO", it: "Co-founder e CPO" } },
+			{ k: { en: "Since", it: "Dal" }, v: "2024" },
+			{ k: { en: "Product", it: "Prodotto" }, v: { en: "AI quality control for textiles", it: "Controllo qualità tessile con l'IA" } },
+			{ k: { en: "Team", it: "Team" }, v: { en: "4 founders, 6 people", it: "4 fondatori, 6 persone" } },
+		],
+		body: {
+			en: [
+				"In 2024 I co-founded a startup with three colleagues. I went from designing robots for a student team to designing a product that has to work every day inside real textile factories.",
+				"BrainTex is an AI quality-control system for the textile industry: cameras watch the fabric as it runs through the machines, and the AI points at the defects, even the ones a trained eye would miss. The slider above shows the same fabric, before and after.",
+				"<h2>What I actually do</h2>",
+				"As Chief Product Officer, my job is to make sure what we build works where it has to: next to a loom, not on a desk. In a four-person founding team, it also means doing whatever needs doing.",
+				"<ul><li><strong>Mechanical hardware</strong>: I develop and maintain the hardware that lives on the factory floor, and validate it in real industrial environments.</li><li><strong>Patents & documentation</strong>: patent registration and technical documentation, turning \"it works\" into something precise, written and protected.</li><li><strong>Servers</strong>: I manage the company's server infrastructure. Yes, the mechanical guy. Welcome to startup life.</li><li><strong>Fundraising & strategy</strong>: pitches, networking, funding applications and all the strategic work that doesn't fit in a CAD file.</li></ul>",
+				"// Turns out the hardest component to design isn't the hardware. It's the business model.",
+				"<h2>Who I work with</h2>",
+				'<div class="team"><div class="member"><b>Francesco Mascarana</b><span>CEO</span></div><div class="member"><b>Simone Torino</b><span>COO</span></div><div class="member"><b>Mirko Agarla</b><span>CTO</span></div><div class="member"><b>Marco Buzzonetti</b><span>CFO</span></div><div class="member is-me"><b>Sergio Gugliandolo</b><span>CPO · that\'s me</span></div><div class="member"><b>Andrea Gullì</b><span>VP of Technology</span></div></div>',
+				'Curious about the product? The official website <a href="https://braintex.it">braintex.it</a> has the whole story. Below: the first BrainTex MVP, installed on a real textile machine.',
+			],
+			it: [
+				"Nel 2024 ho co-fondato una startup con tre colleghi. Sono passato dal progettare robot per un team studentesco al progettare un prodotto che deve funzionare tutti i giorni dentro vere aziende tessili.",
+				"BrainTex è un sistema di controllo qualità con intelligenza artificiale per l'industria tessile: le telecamere osservano il tessuto mentre scorre nei macchinari e l'IA indica i difetti, anche quelli che sfuggono a un occhio esperto. Lo slider qui sopra mostra lo stesso tessuto, prima e dopo.",
+				"<h2>Cosa faccio davvero</h2>",
+				"Da Chief Product Officer il mio compito è assicurarmi che quello che costruiamo funzioni dove deve funzionare: accanto a un telaio, non su una scrivania. In un team di quattro fondatori, vuol dire anche fare tutto quello che serve.",
+				"<ul><li><strong>Hardware meccanico</strong>: sviluppo e mantengo l'hardware che vive in fabbrica, e lo valido in veri ambienti industriali.</li><li><strong>Brevetti e documentazione</strong>: deposito brevetti e documentazione tecnica, per trasformare \"funziona\" in qualcosa di preciso, scritto e protetto.</li><li><strong>Server</strong>: gestisco l'infrastruttura server dell'azienda. Sì, quello della meccanica. Benvenuti nella vita da startup.</li><li><strong>Fundraising e strategia</strong>: pitch, networking, bandi e tutto il lavoro strategico che non sta in un file CAD.</li></ul>",
+				"// Ho scoperto che il componente più difficile da progettare non è l'hardware. È il business model.",
+				"<h2>Con chi lavoro</h2>",
+				'<div class="team"><div class="member"><b>Francesco Mascarana</b><span>CEO</span></div><div class="member"><b>Simone Torino</b><span>COO</span></div><div class="member"><b>Mirko Agarla</b><span>CTO</span></div><div class="member"><b>Marco Buzzonetti</b><span>CFO</span></div><div class="member is-me"><b>Sergio Gugliandolo</b><span>CPO · sono io</span></div><div class="member"><b>Andrea Gullì</b><span>VP of Technology</span></div></div>',
+				'Curioso di saperne di più sul prodotto? Sul sito ufficiale <a href="https://braintex.it">braintex.it</a> trovi tutta la storia. Qui sotto: il primo MVP di BrainTex, installato su un vero macchinario tessile.',
+			],
+		},
+		links: [
+			{ icon: "globe", href: "https://braintex.it", label: { en: "braintex.it", it: "braintex.it" } },
+			{ icon: "linkedin", href: "https://www.linkedin.com/company/braintex-it", label: { en: "BrainTex on LinkedIn", it: "BrainTex su LinkedIn" } },
+			{ icon: "mail", href: "mailto:sergio.gugliandolo@braintex.it", label: { en: "Write me about BrainTex", it: "Scrivimi di BrainTex" } },
+		],
 	},
 
 	/* ------------------------------------------------------------------ */

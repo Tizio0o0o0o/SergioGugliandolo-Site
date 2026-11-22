@@ -17,8 +17,7 @@ Help is welcome! Read on, it takes five minutes to understand how everything fit
 │   ├── site.js             menu, footer, labels, skills, status badges
 │   ├── home.js             home page
 │   ├── links.js            links page (the most used one!)
-│   ├── projects.js         every project, in order
-│   ├── braintex.js         BrainTex page (my role there)
+│   ├── projects.js         every project, in order (BrainTex included)
 │   ├── qr.js               QR page + contact cards (vCards, phone number). Unlisted, see below
 │   └── sum.js              the "-0.08(3)" joke page
 │
@@ -36,7 +35,7 @@ Help is welcome! Read on, it takes five minutes to understand how everything fit
 │   └── <id>/               that project's photos, PDFs and og.jpg (preview image for social media)
 │
 ├── img/                    logo, photo, BrainTex images, favicons
-├── home.html, links.html, projects.html, braintex.html, QR.html, -0.08(3).html, 404.html
+├── home.html, links.html, projects.html, QR.html, -0.08(3).html, 404.html
 ├── sitemap.xml, robots.txt  help search engines find the pages
 ├── _redirects, _headers    Cloudflare Pages settings
 └── SergioGugliandoloCV.pdf

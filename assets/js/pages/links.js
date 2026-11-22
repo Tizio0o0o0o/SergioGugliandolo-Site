@@ -36,7 +36,7 @@
 			'<div class="avatar"><img src="' + asset("img/logo.webp") + '" alt="" width="64" height="64"></div>' +
 			"<h1>Sergio Gugliandolo</h1>" +
 			'<p class="role">' + t(L.role) + "</p>" +
-			'<a class="now-pill" href="' + App.url("braintex") + '"><span class="dot pulse"></span><span>' + t(L.nowPill) + "</span>" + icon("arrowRight") + "</a>" +
+			'<a class="now-pill" href="' + App.url("projects/braintex") + '"><span class="dot pulse"></span><span>' + t(L.nowPill) + "</span>" + icon("arrowRight") + "</a>" +
 			'<div class="quick">' +
 			'<button type="button" class="btn btn-sm btn-primary" data-act="qr">' + icon("qr") + t(L.showQR) + "</button>" +
 			'<button type="button" class="btn btn-sm" data-act="share">' + icon("share") + t(L.share) + "</button>" +

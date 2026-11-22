@@ -3,7 +3,7 @@
    ---------------------------------------------------------------------
    Every link:
      title, sub   text (string, or { en, it })
-     href         "home" / "braintex" for pages of this site, or a full URL
+     href         "home" / "projects/braintex" for pages of this site, or a full URL
      icon         name from assets/js/icons.js (brand logos or ui icons)
      image        alternative to icon: a picture (e.g. "img/isaac.webp")
      color        tile background (brand logos use their own color by default)
@@ -38,7 +38,7 @@ window.LINKS = {
 		{
 			title: { en: "Ventures", it: "Avventure" },
 			items: [
-				{ title: "BrainTex", sub: { en: "The startup I co-founded · CPO", it: "La startup che ho co-fondato · CPO" }, href: "braintex", image: "img/braintex/logo.webp" },
+				{ title: "BrainTex", sub: { en: "The startup I co-founded · CPO", it: "La startup che ho co-fondato · CPO" }, href: "projects/braintex", image: "projects/braintex/logo.webp" },
 				{ title: "Team ISAAC", sub: { en: "The university team I led · 2022–2025", it: "Il team universitario che ho guidato · 2022–2025" }, href: "https://linktr.ee/team.ISAAC.polito", image: "img/isaac.webp", color: "#ffffff" },
 			],
 		},
