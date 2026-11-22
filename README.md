@@ -95,7 +95,7 @@ In long texts (`body` of a project, the BrainTex page, …) each string is one p
 5. *(Optional)* add `projects/my_project/og.jpg`, 1200 × 630 px, as the share preview image.
 6. *(Optional)* add `home: true` to show it in "Selected projects" on the home page (three looks best).
 
-Statuses: `wip` (in progress), `paused`, `done`, `closed` (finished chapter, e.g. Team ISAAC).
+Statuses: `wip` (in progress), `paused`, `done`, `solo` (I pushed it far and now it goes on without me, e.g. Team ISAAC).
 Skill families for the filters are in `content/site.js` → `skills`. Add new ones there.
 
 ## Adding or changing a link

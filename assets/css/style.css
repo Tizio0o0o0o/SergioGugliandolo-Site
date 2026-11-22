@@ -53,7 +53,7 @@
 	--signal-soft: #fde7de;
 	--ok: #18905b;
 	--warn: #b67b00;
-	--closed: #6650c8;
+	--solo: #6650c8;
 	--dot: 36, 98, 184; /* rgb of the background dots */
 	--grid-line: rgba(36, 98, 184, 0.06);
 	--shadow-sm: 0 1px 2px rgba(13, 21, 32, 0.06);
@@ -87,7 +87,7 @@
 	--signal-soft: #3b1c10;
 	--ok: #3cc98a;
 	--warn: #f0b429;
-	--closed: #a594ff;
+	--solo: #a594ff;
 	--dot: 110, 168, 255;
 	--grid-line: rgba(110, 168, 255, 0.05);
 	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -652,8 +652,8 @@ a.tag:hover {
 .badge.status-done {
 	--c: var(--ok);
 }
-.badge.status-closed {
-	--c: var(--closed);
+.badge.status-solo {
+	--c: var(--solo);
 }
 .dot {
 	width: 8px;

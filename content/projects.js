@@ -7,7 +7,7 @@
    Every project:
      id        folder name in /projects and name of projects/<id>.html
      home      optional: true = also shown in "Selected projects" on the home page
-     status    "wip" (in progress) | "paused" | "done" | "closed"
+     status    "wip" (in progress) | "paused" | "done" | "solo" (grown up, goes on without me)
      years     optional, e.g. "2024 →" or "2022 – 2025"
      tags      skill families from content/site.js -> skills (used by filters)
      cover     image for the cards (file inside projects/<id>/)
@@ -47,7 +47,7 @@ window.PROJECTS = [
 	{
 		id: "reseq",
 		home: true,
-		status: "closed",
+		status: "solo",
 		years: "2022 – 2025",
 		tags: ["team", "cad"],
 		cover: "reseq-02.webp",
@@ -87,7 +87,7 @@ window.PROJECTS = [
 				"<h2>From mechanic to team leader</h2>",
 				"I joined the mechanical department in October 2022 and started by fixing what wasn't working on the first robot, the Mk1: I designed a dynamic tensioner for the tracks, improved the traction motor support and worked on the redesign of the robotic arm. The Mk1 was presented at A&T Turin 2023.",
 				"Then I became Head of the Mechanical Department and we rethought the robot from scratch. The Mk2 got better terrain handling, a new traction system, a more capable arm, easier maintenance and a friendlier controller. It made its debut at Maker Faire Rome 2023.",
-				"Finally I became Team Leader: 35+ students from different courses, sponsors to find, deadlines to meet. In November 2025 I left the team to focus on BrainTex. Leaving well is a skill too: the goal was for everything to keep working without me.",
+				"Finally I became Team Leader: 35+ students from different courses, sponsors to find, deadlines to meet. In November 2025 I left the team to focus on BrainTex. I had pushed the project as far as I could, and it was mature enough to keep rolling with the people I'd helped grow. Leaving well is a skill too.",
 				"// 35+ engineering students, zero salaries, one robot. Basically herding cats, except the cats have SolidWorks licences and strong opinions about fillet radii.",
 				'Want to know more? Have a look at the <a href="https://teamisaac.polito.it/">ISAAC website</a>, <a href="https://www.linkedin.com/company/team-isaac-polito/">LinkedIn</a> or <a href="https://www.instagram.com/team_isaac_polito/">Instagram</a>.',
 			],
@@ -96,7 +96,7 @@ window.PROJECTS = [
 				"<h2>Da meccanico a team leader</h2>",
 				"Sono entrato nel reparto meccanico a ottobre 2022 e ho iniziato sistemando quello che non andava sul primo robot, l'Mk1: ho progettato un tenditore dinamico per i cingoli, migliorato il supporto dei motori di trazione e lavorato al nuovo braccio robotico. L'Mk1 è stato presentato ad A&T Torino 2023.",
 				"Poi sono diventato responsabile del reparto meccanico e abbiamo ripensato il robot da zero. L'Mk2 ha una migliore gestione dei terreni, un nuovo sistema di trazione, un braccio più capace, manutenzione più semplice e un controller più amichevole. Ha debuttato alla Maker Faire di Roma 2023.",
-				"Infine sono diventato Team Leader: oltre 35 studenti di corsi diversi, sponsor da trovare, scadenze da rispettare. A novembre 2025 ho lasciato il team per concentrarmi su BrainTex. Anche andarsene bene è una competenza: l'obiettivo era che tutto continuasse a funzionare senza di me.",
+				"Infine sono diventato Team Leader: oltre 35 studenti di corsi diversi, sponsor da trovare, scadenze da rispettare. A novembre 2025 ho lasciato il team per concentrarmi su BrainTex. Avevo spinto il progetto più lontano che potevo, ed era abbastanza maturo da camminare con le sue gambe, con le persone che avevo aiutato a crescere. Anche andarsene bene è una competenza.",
 				"// Oltre 35 studenti di ingegneria, zero stipendi, un robot. In pratica un'assemblea di condominio durata tre anni, ma con più file CAD.",
 				'Vuoi saperne di più? Dai un\'occhiata al <a href="https://teamisaac.polito.it/">sito di ISAAC</a>, a <a href="https://www.linkedin.com/company/team-isaac-polito/">LinkedIn</a> o a <a href="https://www.instagram.com/team_isaac_polito/">Instagram</a>.',
 			],

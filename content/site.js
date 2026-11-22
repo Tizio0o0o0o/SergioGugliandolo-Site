@@ -37,9 +37,12 @@ window.SITE = {
 			label: { en: "Done", it: "Finito" },
 			hint: { en: "Finished. Yes, it happens.", it: "Finito. Sì, ogni tanto succede." },
 		},
-		closed: {
-			label: { en: "Chapter closed", it: "Capitolo chiuso" },
-			hint: { en: "A finished chapter I'm proud of", it: "Un capitolo chiuso, e ne vado fiero" },
+		solo: {
+			label: { en: "Rolling on its own", it: "Cammina con le sue gambe" },
+			hint: {
+				en: "I pushed it as far as I could. Now it's mature enough to keep going without me.",
+				it: "L'ho spinto più lontano che potevo. Ora è abbastanza maturo da andare avanti senza di me.",
+			},
 		},
 	},
 
