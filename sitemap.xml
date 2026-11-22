@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pages Google should know about, in English and Italian (/it/).
+     When you add a project, add its two lines. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>https://sergiogugliandolo.com/home</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/home</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/links</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/links</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/-0.08(3)</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/-0.08(3)</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/braintex</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/braintex</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/reseq</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/reseq</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/analog_digital_photo_frame</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/analog_digital_photo_frame</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/3d_mouse</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/3d_mouse</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/outdoor_kitchen</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/outdoor_kitchen</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/river_epoxy_metal_extendable_table</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/river_epoxy_metal_extendable_table</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/mastermind_telegram_bot</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/mastermind_telegram_bot</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/willy_lamp</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/willy_lamp</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/tesseract_lamp</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/tesseract_lamp</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/wallet_card</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/wallet_card</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/self_watering_vase</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/self_watering_vase</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/johnnie_holder</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/johnnie_holder</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/projects/auto_hotkey</loc><lastmod>2026-11-22</lastmod></url>
+	<url><loc>https://sergiogugliandolo.com/it/projects/auto_hotkey</loc><lastmod>2026-11-22</lastmod></url>
+</urlset>

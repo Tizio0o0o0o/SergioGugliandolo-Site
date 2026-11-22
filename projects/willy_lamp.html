@@ -1,267 +1,55 @@
-<!DOCTYPE html>
-<style>
-	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
-	.iframe-container {
-		display: block;
-		border: 0;
-	}
-</style>
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Sergio Gugliandolo</title>
-	<meta property="og:title" content="Sergio Gugliandolo" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://sergiogugliandolo.com/" />
-	<meta property="og:description" content="Willy lamp" />
-	<meta
-		property="og:image"
-		content="https://sergiogugliandolo.com/img/Logo.png"
-	/>
-	<link
-		href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-		rel="stylesheet"
-	/>
-	<link rel="icon" type="image/png" sizes="500x500" href="../img/Logo.png" />
-
-	<script
-		id="Cookiebot"
-		src="https://consent.cookiebot.com/uc.js"
-		data-cbid="519256d7-3a7a-4592-9daa-cec2e74f011c"
-		type="text/javascript"
-	></script>
-	<!-- Google tag (gtag.js) -->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-RS544LBE5K"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-
-		gtag("config", "G-RS544LBE5K");
-	</script>
-</head>
+<!doctype html>
 <html lang="en">
-	<body class="flex flex-col h-screen bg-slate-300">
-		<header class="flex-shrink-0 bg-white py-4 shadow-md">
-			<div class="container mx-auto flex items-center justify-between px-4">
-				<div>
-					<a href="../home.html" class="font-bold text-2xl text-gray-900"
-						>Sergio Gugliandolo</a
-					>
-					<a class="font-bold text-2xl text-gray-900">&roarr;</a>
-					<a href="willy_lamp.html" class="font-bold text-2xl text-gray-900">
-						Willy lamp
-					</a>
-				</div>
-				<nav>
-					<ul class="flex items-center">
-						<li>
-							<a
-								href="../home.html"
-								class="px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-							>
-								Home
-							</a>
-						</li>
-						<li>
-							<a
-								href="../projects.html"
-								class="px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-							>
-								Projects
-							</a>
-						</li>
-						<li>
-							<button
-								class="peer px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-							>
-								Contact
-							</button>
-							<div
-								class="hidden z-50 peer-hover:flex hover:flex origin-top-right absolute rounded-md shadow-lg"
-							>
-								<div class="rounded-md bg-white shadow-xs">
-									<a
-										href="mailto:gugliandolosergio@gmail.com"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 flex-row text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										Mail
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
-											alt="Gmail logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-									<a
-										href="https://www.linkedin.com/in/sergio-gugliandolo/"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										Linkedin
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-											alt="Linkedin logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-									<a
-										href="https://t.me/Tizio0o0o0o"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										Telegram
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-											alt="Telegram logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-									<a
-										href="SergioGugliandoloCV.pdf"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										CV
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Acroread.svg/800px-Acroread.svg.png"
-											alt="PDF logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main
-			class="flex-grow min-h-fit text-justify container m-8 mx-auto w-10/12"
-		>
-			<div class="flex flex-wrap">
-				<div class="md:w-5/12 mx-auto my-2 align-middle">
-					<p class="text-gray-900 mx-5 align-middle">
-						You've probably stumbled upon one of those infamous lamps online.
-						Let me tell you, it's quite the spectacle! It's got a certain flair
-						that pushes boundaries and catches attention. Personally, I find it
-						fascinating!
-					</p>
-					<p class="text-gray-900 mt-3 mx-5 align-middle">
-						Now, when it comes to designing this lamp, I'm thinking outside the
-						box. I don't just want a replica; I want a lamp that embodies the
-						essence of a certain shape that may remind you of something, that
-						<a class="italic font-bold text-gray-900"> turns on </a> with a
-						strangely familiar motion. To achieve this, I'm envisioning a clever
-						mechanism using a limit switch, activated by a string delicately
-						attached to a cover that's so intricately crafted, it's practically
-						a work of art.
-					</p>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Willy lamp · Sergio Gugliandolo</title>
+	<meta name="description" content="You've seen this lamp online. Mine turns on with a strangely familiar motion, prints without supports and runs on a phone charger. Skill unlocked: 3D printing for production." />
+	<meta name="author" content="Sergio Gugliandolo" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Sergio Gugliandolo" />
+	<meta property="og:title" content="Willy lamp · Sergio Gugliandolo" />
+	<meta property="og:description" content="You've seen this lamp online. Mine turns on with a strangely familiar motion, prints without supports and runs on a phone charger. Skill unlocked: 3D printing for production." />
+	<meta property="og:url" content="https://sergiogugliandolo.com/projects/willy_lamp" />
+	<meta property="og:image" content="https://sergiogugliandolo.com/projects/willy_lamp/og.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:locale:alternate" content="it_IT" />
+	<!-- the same page in English and Italian (the "main address" for each language is set by boot.js) -->
+	<link rel="alternate" hreflang="en" href="https://sergiogugliandolo.com/projects/willy_lamp" />
+	<link rel="alternate" hreflang="it" href="https://sergiogugliandolo.com/it/projects/willy_lamp" />
+	<link rel="alternate" hreflang="x-default" href="https://sergiogugliandolo.com/projects/willy_lamp" />
+	<link rel="icon" type="image/png" href="../img/favicon-48.png" />
+	<link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
+	<link rel="preload" href="../assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+	<!-- the big image of this page: start downloading it right away -->
+	<link rel="preload" href="/projects/willy_lamp/willy_lamp.webp" as="image" fetchpriority="high" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
 
-					<p class="text-gray-900 mt-3 mx-5 align-middle">
-						Safety is paramount here, so no messing around with high voltage. A
-						humble 5-volt LED ring will more than suffice for my inventive
-						project. And hey, one of the perks is that it can easily be powered
-						by a simple 5-volt phone charger. You know, practicality at its
-						finest!
-					</p>
-					<p class="text-gray-900 mt-3 mx-5 align-middle">
-						Now, let's talk about the design. It's been meticulously optimized
-						for 3D printing: don't worry, it'll fit in your standard printer
-						without a hitch (max height of 196mm). No need for pesky support
-						structures that tend to complicate matters. Oh, and let's not forget
-						about minimizing filament usage. I've added special ribs to make
-						sure the walls are strong and sturdy, while still being mindful of
-						being economical with our precious filament. Innovation meets
-						efficiency!
-					</p>
-				</div>
-				<div class="relative w-full h-fit md:w-7/12 my-2 mx-auto">
-					<img
-						src="willy_lamp/willy_lamp-01.png"
-						class="max-h-screen w-auto object-cover rounded-md mx-auto"
-						alt="Willy lamp image"
-						id="photo"
-					/>
-					<button
-						class="absolute py-20 px-3 top-0 left-0 h-full flex items-center"
-						id="leftButton"
-					>
-						<div class="text-black font-bold w-2/12">&LeftTriangle;</div>
-					</button>
-					<button
-						class="absolute py-20 px-3 top-0 right-0 h-full flex items-center"
-						id="rightButton"
-					>
-						<div class="text-black font-bold w-2/12">&RightTriangle;</div>
-					</button>
-				</div>
-				<div class="iframe-container w-full h-screen my-2 mx-auto">
-					<iframe src="https://a360.co/3W1qGjT" class="w-full h-full"></iframe>
-				</div>
-			</div>
-		</main>
-		<footer
-			class="flex-shrink-0 bg-gray-900 text-white py-4 flex justify-between"
-		>
-			<div class="flex items-center mx-5">
-				<a href="#top" class="btn btn-secondary"> &uuarr; </a>
-			</div>
-			<div class="container mx-auto px-4 text-center text-gray-500">
-				<a
-					href="https://github.com/Tizio0o0o0o/SergioGugliandolo-Site/blob/main/LICENSE"
-					target="_blank"
-					>GNU General Public License (GPL) v3.0</a
-				>
-			</div>
-		</footer>
-		<script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			window.addEventListener("DOMContentLoaded", () => {
-				const photos = [
-					"willy_lamp/willy_lamp-01.png",
-					"willy_lamp/willy_lamp-02.png",
-					"willy_lamp/willy_lamp-03.png",
-					"willy_lamp/willy_lamp-04.png",
-					"willy_lamp/willy_lamp-05.png",
-					"willy_lamp/willy_lamp-04.png",
-					"willy_lamp/willy_lamp-03.png",
-					"willy_lamp/willy_lamp-02.png",
-				];
-				let currentPhoto = 0;
-				let intervalId;
-				const photo = document.getElementById("photo");
-				const leftButton = document.getElementById("leftButton");
-				const rightButton = document.getElementById("rightButton");
+	<!-- Theme + language + analytics consent defaults (runs before the page is drawn) -->
+	<script src="../assets/js/boot.js"></script>
+	<!-- Cookie consent + Google Analytics (Analytics waits for consent, see boot.js) -->
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="519256d7-3a7a-4592-9daa-cec2e74f011c" type="text/javascript" async></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS544LBE5K"></script>
 
-				intervalId = setInterval(() => {
-					currentPhoto = (currentPhoto + 1) % photos.length;
-					photo.src = photos[currentPhoto];
-				}, 300);
-
-				leftButton.addEventListener("click", () => {
-					clearInterval(intervalId);
-					currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
-					photo.src = photos[currentPhoto];
-				});
-
-				rightButton.addEventListener("click", () => {
-					clearInterval(intervalId);
-					currentPhoto = (currentPhoto + 1) % photos.length;
-					photo.src = photos[currentPhoto];
-				});
-			});
-		</script>
-	</body>
+	<!-- Content: the texts live here -->
+	<script defer src="../content/site.js"></script>
+	<script defer src="../content/projects.js"></script>
+	<!-- Engine -->
+	<script defer src="../assets/js/icons.js"></script>
+	<script defer src="../assets/js/core.js"></script>
+	<script defer src="../assets/js/pages/project.js"></script>
+</head>
+<body data-root="../" data-nav="projects" data-project="willy_lamp">
+	<main id="app" tabindex="-1">
+		<noscript>
+			<div class="card noscript">
+				<h1>Sergio Gugliandolo</h1>
+				<p>This website needs JavaScript to show its content. · Questo sito ha bisogno di JavaScript per mostrare i contenuti.</p>
+				<p><a href="../SergioGugliandoloCV.pdf">CV (PDF)</a> · <a href="https://www.linkedin.com/in/sergio-gugliandolo/">LinkedIn</a> · <a href="mailto:gugliandolosergio@gmail.com">Email</a></p>
+			</div>
+		</noscript>
+	</main>
+</body>
 </html>

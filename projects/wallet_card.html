@@ -1,278 +1,55 @@
-<!DOCTYPE html>
-<style>
-	@import "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css";
-	.iframe-container {
-		display: block;
-		border: 0;
-	}
-</style>
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Sergio Gugliandolo</title>
-	<meta property="og:title" content="Sergio Gugliandolo" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://sergiogugliandolo.com/" />
-	<meta property="og:description" content="Wallet card" />
-	<meta
-		property="og:image"
-		content="https://sergiogugliandolo.com/img/Logo.png"
-	/>
-	<link
-		href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-		rel="stylesheet"
-	/>
-	<link rel="icon" type="image/png" sizes="500x500" href="../img/Logo.png" />
-
-	<script
-		id="Cookiebot"
-		src="https://consent.cookiebot.com/uc.js"
-		data-cbid="519256d7-3a7a-4592-9daa-cec2e74f011c"
-		type="text/javascript"
-	></script>
-	<!-- Google tag (gtag.js) -->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-RS544LBE5K"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-
-		gtag("config", "G-RS544LBE5K");
-	</script>
-</head>
+<!doctype html>
 <html lang="en">
-	<body class="flex flex-col h-screen bg-slate-300">
-		<header class="flex-shrink-0 bg-white py-4 shadow-md">
-			<div class="container mx-auto flex items-center justify-between px-4">
-				<div>
-					<a href="../home.html" class="font-bold text-2xl text-gray-900"
-						>Sergio Gugliandolo</a
-					>
-					<a class="font-bold text-2xl text-gray-900">&roarr;</a>
-					<a href="wallet_card.html" class="font-bold text-2xl text-gray-900">
-						Wallet card
-					</a>
-				</div>
-				<nav>
-					<ul class="flex items-center">
-						<li>
-							<a
-								href="../home.html"
-								class="px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-							>
-								Home
-							</a>
-						</li>
-						<li>
-							<a
-								href="../projects.html"
-								class="px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-							>
-								Projects
-							</a>
-						</li>
-						<li>
-							<button
-								class="peer px-2 py-2 font-bold rounded-lg text-gray-400 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-							>
-								Contact
-							</button>
-							<div
-								class="hidden z-50 peer-hover:flex hover:flex origin-top-right absolute rounded-md shadow-lg"
-							>
-								<div class="rounded-md bg-white shadow-xs">
-									<a
-										href="mailto:gugliandolosergio@gmail.com"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 flex-row text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										Mail
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
-											alt="Gmail logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-									<a
-										href="https://www.linkedin.com/in/sergio-gugliandolo/"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										Linkedin
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-											alt="Linkedin logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-									<a
-										href="https://t.me/Tizio0o0o0o"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										Telegram
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-											alt="Telegram logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-									<a
-										href="SergioGugliandoloCV.pdf"
-										target="_blank"
-										class="block px-4 py-2 text-sm leading-5 text-gray-900 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition duration-150 ease-in-out"
-									>
-										CV
-										<img
-											src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Acroread.svg/800px-Acroread.svg.png"
-											alt="PDF logo"
-											width="20"
-											class="mr-3 align-middle"
-										/>
-									</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main
-			class="flex-grow min-h-fit text-justify container m-8 mx-auto w-10/12 flex flex-wrap"
-		>
-			<div class="md:w-5/12 mx-auto mt-2 mb-10 align-middle">
-				<p class="text-gray-900 mx-5 align-middle">
-					Carrying around a bulky wallet solely for the sake of card dividers is
-					a pet peeve of mine. Why waste precious space when all I really need
-					are my cards and a few handy
-					<a class="italic">knick-knacks</a>
-					?
-				</p>
-				<p class="text-gray-900 mt-3 mx-5 align-middle">
-					That's when the brilliant idea struck me: why not create an ingenious
-					solution by enveloping my cards in a stretchy fabric? This
-					revolutionary concept would eliminate any unnecessary extra space,
-					securely housing my cards and bills with the help of rubber linings
-					embedded within the fabric.
-				</p>
-				<p class="text-gray-900 mt-3 mx-5 align-middle">
-					But wait, what about those little trinkets that always seem to be in
-					need of a home? That's where the genius idea of incorporating a key
-					holder came into play. Imagine a 3D printed card-shaped marvel,
-					meticulously designed to fit seamlessly into my lifestyle.
-				</p>
-			</div>
-			<div class="relative h-fit md:w-7/12 mt-2 mb-10 mx-auto">
-				<img
-					src="wallet_card/wallet_card-01.png"
-					class="max-h-screen w-auto object-cover rounded-md mx-auto"
-					alt="Wallet card image"
-					id="photo"
-				/>
-				<button
-					class="absolute py-20 px-3 top-0 left-0 h-full flex items-center"
-					id="leftButton"
-				>
-					<div class="text-black font-bold w-2/12">&LeftTriangle;</div>
-				</button>
-				<button
-					class="absolute py-20 px-3 top-0 right-0 h-full flex items-center"
-					id="rightButton"
-				>
-					<div class="text-black font-bold w-2/12">&RightTriangle;</div>
-				</button>
-			</div>
-			<div class="iframe-container h-screen md:w-7/12 my-2 mx-auto md:my-0">
-				<iframe src="https://a360.co/3uQc27x" class="w-full h-full"></iframe>
-			</div>
-			<div class="md:w-5/12 mx-auto my-2 align-middle">
-				<p class="text-gray-900 mt-3 mx-5 align-middle">
-					Within the confines of this remarkable creation, I can comfortably
-					carry an array of objects, including:
-				</p>
-				<ul class="text-gray-900 mx-5 align-middle">
-					<li>&SmallCircle; 2 coins;</li>
-					<li>&SmallCircle; 1 female USB-A to male USB-C adapter;</li>
-					<li>&SmallCircle; 1 USB stick;</li>
-					<li>&SmallCircle; 1 clamp to hold together the last 2 items;</li>
-					<li>&SmallCircle; 1 micro SD to USB-C adapter;</li>
-					<li>&SmallCircle; 4 micro SD;</li>
-					<li>&SmallCircle; 1 SIM tool;</li>
-					<li>&SmallCircle; 1 big key;</li>
-					<li>&SmallCircle; 2 small keys.</li>
-				</ul>
-				<p class="text-gray-900 mt-3 mx-5 align-middle">
-					All of this neatly tucked away, with a mere 5mm in height (yes, even
-					that chunky key can slide right in!).
-				</p>
-				<p class="text-gray-900 mt-3 mx-5 align-middle">
-					The design is meticulously optimized for a flawless 3D printing
-					experience, utilizing a 0.4mm nozzle and a layer height of 0.2mm.
-				</p>
-				<p class="text-gray-900 mt-3 mx-5 align-middle">
-					Say goodbye to the hassle of lugging around a cumbersome wallet, and
-					say hello to a stylish and practical solution that will transform the
-					way you carry your essentials. The future is here, and it's all about
-					efficiency, organization, and a touch of innovation.
-				</p>
-			</div>
-		</main>
-		<footer
-			class="flex-shrink-0 bg-gray-900 text-white py-4 flex justify-between"
-		>
-			<div class="flex items-center mx-5">
-				<a href="#top" class="btn btn-secondary"> &uuarr; </a>
-			</div>
-			<div class="container mx-auto px-4 text-center text-gray-500">
-				<a
-					href="https://github.com/Tizio0o0o0o/SergioGugliandolo-Site/blob/main/LICENSE"
-					target="_blank"
-					>GNU General Public License (GPL) v3.0</a
-				>
-			</div>
-		</footer>
-		<script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			window.addEventListener("DOMContentLoaded", () => {
-				const photos = [
-					"wallet_card/wallet_card-01.png",
-					"wallet_card/wallet_card-02.png",
-					"wallet_card/wallet_card-03.png",
-					"wallet_card/wallet_card-04.png",
-				];
-				let currentPhoto = 0;
-				let intervalId;
-				const photo = document.getElementById("photo");
-				const leftButton = document.getElementById("leftButton");
-				const rightButton = document.getElementById("rightButton");
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Wallet card · Sergio Gugliandolo</title>
+	<meta name="description" content="Cards in an elastic band, plus a 5 mm 3D-printed card that holds keys, microSDs, adapters and two coins. Skill unlocked: Precision 3D printing." />
+	<meta name="author" content="Sergio Gugliandolo" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Sergio Gugliandolo" />
+	<meta property="og:title" content="Wallet card · Sergio Gugliandolo" />
+	<meta property="og:description" content="Cards in an elastic band, plus a 5 mm 3D-printed card that holds keys, microSDs, adapters and two coins. Skill unlocked: Precision 3D printing." />
+	<meta property="og:url" content="https://sergiogugliandolo.com/projects/wallet_card" />
+	<meta property="og:image" content="https://sergiogugliandolo.com/projects/wallet_card/og.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:locale:alternate" content="it_IT" />
+	<!-- the same page in English and Italian (the "main address" for each language is set by boot.js) -->
+	<link rel="alternate" hreflang="en" href="https://sergiogugliandolo.com/projects/wallet_card" />
+	<link rel="alternate" hreflang="it" href="https://sergiogugliandolo.com/it/projects/wallet_card" />
+	<link rel="alternate" hreflang="x-default" href="https://sergiogugliandolo.com/projects/wallet_card" />
+	<link rel="icon" type="image/png" href="../img/favicon-48.png" />
+	<link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
+	<link rel="preload" href="../assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+	<!-- the big image of this page: start downloading it right away -->
+	<link rel="preload" href="/projects/wallet_card/wallet_card-01.webp" as="image" fetchpriority="high" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
 
-				intervalId = setInterval(() => {
-					currentPhoto = (currentPhoto + 1) % photos.length;
-					photo.src = photos[currentPhoto];
-				}, 5000);
+	<!-- Theme + language + analytics consent defaults (runs before the page is drawn) -->
+	<script src="../assets/js/boot.js"></script>
+	<!-- Cookie consent + Google Analytics (Analytics waits for consent, see boot.js) -->
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="519256d7-3a7a-4592-9daa-cec2e74f011c" type="text/javascript" async></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS544LBE5K"></script>
 
-				leftButton.addEventListener("click", () => {
-					clearInterval(intervalId);
-					currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
-					photo.src = photos[currentPhoto];
-				});
-
-				rightButton.addEventListener("click", () => {
-					clearInterval(intervalId);
-					currentPhoto = (currentPhoto + 1) % photos.length;
-					photo.src = photos[currentPhoto];
-				});
-			});
-		</script>
-	</body>
+	<!-- Content: the texts live here -->
+	<script defer src="../content/site.js"></script>
+	<script defer src="../content/projects.js"></script>
+	<!-- Engine -->
+	<script defer src="../assets/js/icons.js"></script>
+	<script defer src="../assets/js/core.js"></script>
+	<script defer src="../assets/js/pages/project.js"></script>
+</head>
+<body data-root="../" data-nav="projects" data-project="wallet_card">
+	<main id="app" tabindex="-1">
+		<noscript>
+			<div class="card noscript">
+				<h1>Sergio Gugliandolo</h1>
+				<p>This website needs JavaScript to show its content. · Questo sito ha bisogno di JavaScript per mostrare i contenuti.</p>
+				<p><a href="../SergioGugliandoloCV.pdf">CV (PDF)</a> · <a href="https://www.linkedin.com/in/sergio-gugliandolo/">LinkedIn</a> · <a href="mailto:gugliandolosergio@gmail.com">Email</a></p>
+			</div>
+		</noscript>
+	</main>
+</body>
 </html>
