@@ -63,7 +63,7 @@
 	function about() {
 		var stats = H.stats
 			.map(function (s) {
-				var v = s.value === "{projects}" ? String(window.PROJECTS.length) : s.value;
+				var v = s.value === "{projects}" ? String(window.PROJECTS.length) : String(t(s.value));
 				var num = parseInt(v, 10);
 				var suffix = v.replace(/^\d+/, "");
 				return '<div class="stat reveal"><b data-count="' + num + '" data-suffix="' + suffix + '">' + v + "</b><span>" + t(s.label) + "</span></div>";

@@ -110,6 +110,7 @@ window.PROJECTS = [
 	/* ------------------------------------------------------------------ */
 	{
 		id: "analog_digital_photo_frame",
+		home: true,
 		status: "paused",
 		tags: ["electronics", "code", "cad", "print3d"],
 		cover: "analog_digital_photo_frame-01.webp",
@@ -545,7 +546,6 @@ window.PROJECTS = [
 	/* ------------------------------------------------------------------ */
 	{
 		id: "wallet_card",
-		home: true,
 		status: "done",
 		tags: ["print3d", "cad"],
 		cover: "wallet_card-02.webp",

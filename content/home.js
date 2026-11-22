@@ -69,8 +69,8 @@ window.HOME = {
 	stats: [
 		{ value: "{projects}", label: { en: "projects, each one a lesson", it: "progetti, ognuno una lezione" } },
 		{ value: "35+", label: { en: "teammates led at Team ISAAC", it: "compagni guidati nel Team ISAAC" } },
-		{ value: "8", label: { en: "versions of a single photo frame", it: "versioni di una sola cornice" } },
 		{ value: "1", label: { en: "startup co-founded (so far)", it: "startup co-fondata (per ora)" } },
+		{ value: { en: "1.5", it: "1,5" }, label: { en: "engineering degrees (the .5 is still loading)", it: "lauree in ingegneria (lo 0,5 sta ancora caricando)" } },
 	],
 
 	/* ---------- selected projects ----------
