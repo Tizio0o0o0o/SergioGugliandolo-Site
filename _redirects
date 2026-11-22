@@ -1,1 +1,15 @@
-/ /links 301
+# Cloudflare Pages redirects — https://developers.cloudflare.com/pages/configuration/redirects/
+# (rules are checked top to bottom, the first match wins)
+
+# sergiogugliandolo.com opens the links page (the one on QR codes and business cards)
+/        /links                      301
+/it      /it/links                   301
+/it/     /it/links                   301
+
+# handy short links
+/cv      /SergioGugliandoloCV.pdf    302
+/sum     /-0.08(3)                   302
+
+# Italian version of every page: /it/projects shows the same file as /projects,
+# and assets/js/boot.js switches the texts to Italian. Keep this rule last.
+/it/*    /:splat                     200
