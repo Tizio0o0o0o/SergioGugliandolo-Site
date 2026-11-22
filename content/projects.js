@@ -213,7 +213,6 @@ window.PROJECTS = [
 		versions: [
 			{
 				name: "V1",
-				model3d: "https://a360.co/3ZsBmeu",
 				text: {
 					en: "Two frames side by side and a small robotic arm (9 g servos) with a suction cup. The vacuum comes from a syringe moved by another servo. The arm picks a photo from one pile and drops it on the other.",
 					it: "Due cornici affiancate e un piccolo braccio robotico (servo da 9 g) con una ventosa. Il vuoto lo crea una siringa mossa da un altro servo. Il braccio prende una foto da una pila e la posa sull'altra.",
@@ -225,7 +224,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V2",
-				model3d: "https://a360.co/3GpYeCm",
 				text: {
 					en: "New strategy: take the top photo and slide it under the pile, so every photo is shown exactly once per cycle. A long linear actuator with a rubber tip drags the photo, a small ramp lets it slip underneath. Only 3 motors.",
 					it: "Nuova strategia: prendere la foto in cima e infilarla sotto la pila, così ogni foto si vede una sola volta per ciclo. Un lungo attuatore lineare con la punta in gomma trascina la foto, una piccola rampa la fa scivolare sotto. Solo 3 motori.",
@@ -237,7 +235,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V3",
-				model3d: "https://a360.co/3X97Po7",
 				text: {
 					en: "A bridge-style actuator (like a tiny gantry crane) picks the top photo with a vacuum gripper and places it where the V2 arm can push it under the pile.",
 					it: "Un attuatore a ponte (come un mini carroponte) prende la foto in cima con una pinza a vuoto e la posa dove il braccio della V2 può spingerla sotto la pila.",
@@ -249,7 +246,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V4",
-				model3d: "https://a360.co/3CrWpni",
 				text: {
 					en: "V3 made me reconsider V1: a bridge-style actuator could fix its worst problem, the number of motors. So I gave the original idea a second chance.",
 					it: "La V3 mi ha fatto ripensare alla V1: un attuatore a ponte poteva risolvere il suo problema peggiore, il numero di motori. Così ho dato una seconda possibilità all'idea originale.",
@@ -261,7 +257,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V5",
-				model3d: "https://a360.co/317xpi6",
 				text: {
 					en: "2 mm plexiglass as the main material: transparent things look smaller than they are. As suggested by a reader, the big bridge became a single-sided one. Two boxes hide cables and electronics.",
 					it: "Plexiglass da 2 mm come materiale principale: le cose trasparenti sembrano più piccole di quello che sono. Su suggerimento di un lettore, il grande ponte è diventato a sbalzo, su un solo lato. Due scatole nascondono cavi ed elettronica.",
@@ -273,7 +268,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V6",
-				model3d: "https://a360.co/3nkuJIl",
 				text: {
 					en: "Strength solved with 3D-printed linear bearings sliding on 8 mm steel rods. Servos replaced by 28BYJ-48 stepper motors: still cheap, but quieter and more precise. A hall-effect sensor and a magnet give each axis an absolute zero.",
 					it: "Robustezza risolta con cuscinetti lineari stampati in 3D che scorrono su barre d'acciaio da 8 mm. I servo lasciano il posto a motori passo-passo 28BYJ-48: sempre economici, ma più silenziosi e precisi. Un sensore Hall e una calamita danno a ogni asse uno zero assoluto.",
@@ -285,7 +279,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V7",
-				model3d: "https://a360.co/3XacK8b",
 				text: {
 					en: "All the electronics (microcontroller and motor drivers) moved inside the arm, so the frame is only plexiglass and the boxes are gone. The suction cup sits at the end of the vertical arm, connected to a mini solenoid valve: open while pressing on the photo to let air out, closed while carrying it. No pump needed, and tests showed it's strong enough to lift and quick enough to let go.",
 					it: "Tutta l'elettronica (microcontrollore e driver dei motori) si è spostata dentro il braccio: la cornice è solo plexiglass e le scatole spariscono. La ventosa è in fondo al braccio verticale, collegata a una mini elettrovalvola: aperta mentre preme sulla foto per far uscire l'aria, chiusa mentre la trasporta. Niente pompa, e dai test tiene abbastanza per sollevare e molla al momento giusto.",
@@ -297,7 +290,6 @@ window.PROJECTS = [
 			},
 			{
 				name: "V8",
-				model3d: "https://a360.co/49s2df8",
 				text: {
 					en: "After real tests: proper 8 mm linear bearings (smoother, no wobble, no noise), a frame optimised for laser-cut 2 mm plexiglass with a 3D-printed divider, an organic-shaped arm and a smaller Arduino Pro Micro. This is where the project is parked.",
 					it: "Dopo i test veri: cuscinetti lineari da 8 mm veri (più fluidi, niente giochi, niente rumore), una cornice ottimizzata per il taglio laser del plexiglass da 2 mm con un divisore stampato in 3D, un braccio dalla forma organica e un Arduino Pro Micro più piccolo. Il progetto è parcheggiato qui.",

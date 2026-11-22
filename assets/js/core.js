@@ -116,7 +116,7 @@
 			'<img src="' + cover + '" alt="' + App.esc(App.t(p.title)) + '" loading="lazy"' + (p.coverFill ? ' class="cover-fill"' : "") + "></div>" +
 			'<div class="pcard-body">' +
 			'<div class="meta-row">' + (p.years ? '<span class="years mono">' + p.years + "</span>" : "") + "</div>" +
-			"<h3>" + App.t(p.title) + "</h3>" +
+			"<" + (opts.h || "h3") + ' class="pcard-title">' + App.t(p.title) + "</" + (opts.h || "h3") + ">" +
 			'<p class="pcard-tagline">' + App.t(p.tagline) + "</p>" +
 			'<div class="skill-line"><span class="k">' + App.ui("skillUnlocked") + "</span><span>" + App.t(p.skill) + "</span></div>" +
 			"</div></a>"

@@ -47,7 +47,7 @@
 			'<a class="card feature ticks reveal" href="' + url("projects/braintex") + '">' +
 			'<div class="feature-body">' +
 			'<span class="eyebrow">' + t(H.nowEyebrow) + "</span>" +
-			'<div class="feature-logo"><img src="' + asset("projects/braintex/logo.webp") + '" alt="" width="52" height="52"><div><h3>BrainTex</h3>' + App.statusBadge("wip") + "</div></div>" +
+			'<div class="feature-logo"><img src="' + asset("projects/braintex/logo.webp") + '" alt="" width="52" height="58"><div><h2>BrainTex</h2>' + App.statusBadge("wip") + "</div></div>" +
 			'<p style="color:var(--ink);font-weight:600">' + t(H.nowTitle) + "</p>" +
 			"<p>" + t(H.nowText) + "</p>" +
 			'<span class="btn btn-accent btn-sm">' + t(H.nowCta) + icon("arrowRight", "i-move") + "</span>" +

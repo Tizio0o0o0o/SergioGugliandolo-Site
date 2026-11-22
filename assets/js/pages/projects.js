@@ -22,7 +22,7 @@
 				})
 				.join("");
 		var cards = window.PROJECTS.map(function (p) {
-			return App.projectCard(p, { featured: p.featured });
+			return App.projectCard(p, { featured: p.featured, h: "h2" });
 		}).join("");
 		return (
 			'<section class="page-head"><div class="wrap">' +

@@ -90,6 +90,7 @@ In long texts (`body` of a project, the BrainTex page, …) each string is one p
    - `data-project="my_project"` on the `<body>` tag
    - the `<title>`, `description` and `og:` tags (that's what WhatsApp/LinkedIn show when the link is shared)
    - the three `hreflang` lines (they contain the page address, e.g. `/projects/my_project` and `/it/projects/my_project`)
+   - the `preload` line: the path of the first big image of the page (makes it appear faster)
 4. **Sitemap**: add two lines for the new page in `sitemap.xml`, the English and the `/it/` address (it helps Google find them).
 5. *(Optional)* add `projects/my_project/og.jpg`, 1200 × 630 px, as the share preview image.
 6. *(Optional)* add `home: true` to show it in "Selected projects" on the home page (three looks best).

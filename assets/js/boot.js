@@ -64,9 +64,18 @@
 		document.head.appendChild(canonical);
 	}
 
-	// ---- Google Analytics (consent handled by Cookiebot) ----
+	// ---- Google Analytics, only after cookie consent ----
+	// Google "consent mode": everything starts as denied (no cookies);
+	// Cookiebot switches it on when the visitor accepts the statistics cookies.
 	window.dataLayer = window.dataLayer || [];
 	window.gtag = function () { window.dataLayer.push(arguments); };
+	window.gtag("consent", "default", {
+		ad_storage: "denied",
+		ad_user_data: "denied",
+		ad_personalization: "denied",
+		analytics_storage: "denied",
+		wait_for_update: 500,
+	});
 	window.gtag("js", new Date());
 	window.gtag("config", "G-RS544LBE5K");
 })();

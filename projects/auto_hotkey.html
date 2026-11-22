@@ -23,13 +23,15 @@
 	<link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
 	<link rel="preload" href="../assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+	<!-- the big image of this page: start downloading it right away -->
+	<link rel="preload" href="/projects/auto_hotkey/auto_hotkey.webp" as="image" fetchpriority="high" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
 
-	<!-- Cookie consent + Google Analytics -->
-	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="519256d7-3a7a-4592-9daa-cec2e74f011c" type="text/javascript"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS544LBE5K"></script>
-	<!-- Theme + language (runs before the page is drawn) -->
+	<!-- Theme + language + analytics consent defaults (runs before the page is drawn) -->
 	<script src="../assets/js/boot.js"></script>
+	<!-- Cookie consent + Google Analytics (Analytics waits for consent, see boot.js) -->
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="519256d7-3a7a-4592-9daa-cec2e74f011c" type="text/javascript" async></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS544LBE5K"></script>
 
 	<!-- Content: the texts live here -->
 	<script defer src="../content/site.js"></script>
