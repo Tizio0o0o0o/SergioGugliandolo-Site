@@ -101,6 +101,7 @@ Skill families for the filters are in `content/site.js` → `skills`. Add new on
 ## Adding or changing a link
 
 Edit `content/links.js`. Each link has a `title`, an optional `sub`title, an `href` and an `icon`.
+The Telegram link and email used by the "Let's talk" box on the home page and by the "Building something similar?" box at the bottom of project pages are in `content/site.js` → `contact`. To hide that box on a project, add `contact: false` to it.
 Brand icons come from [simpleicons.org](https://simpleicons.org): to add one, copy its SVG path into `assets/js/icons.js` → `brands`.
 
 ## QR codes and contact cards

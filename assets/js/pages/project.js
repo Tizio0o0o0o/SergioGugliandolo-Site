@@ -139,6 +139,22 @@
 		return '<details class="code-peek reveal"><summary>' + icon("code") + ui("peekCode") + '</summary><pre><code>' + ui("loading") + "</code></pre></details>";
 	}
 
+	// "Building something similar? Write me" (skipped when the project has  contact: false)
+	function contactBox() {
+		if (p.contact === false) return "";
+		var c = window.SITE.contact;
+		var subject = encodeURIComponent(ui("similarSubject") + t(p.title));
+		return (
+			'<div class="card contact-band is-compact reveal">' +
+			'<div><span class="eyebrow">' + ui("similarEyebrow") + "</span><h2>" + ui("similarTitle") + "</h2><p>" + ui("similarText") + "</p></div>" +
+			'<div class="btn-row">' +
+			'<a class="btn btn-primary" href="' + c.telegram + '" target="_blank" rel="noopener">' + icon("telegram") + "Telegram</a>" +
+			'<a class="btn" href="mailto:' + c.email + "?subject=" + subject + '">' + icon("mail") + "Email</a>" +
+			'<a class="btn" href="' + url("links") + '">' + ui("allLinks") + icon("arrowRight", "i-move") + "</a>" +
+			"</div></div>"
+		);
+	}
+
 	function pager() {
 		var list = window.PROJECTS;
 		var i = list.indexOf(p);
@@ -168,7 +184,7 @@
 			aside() +
 			'<div class="area-body"><div class="prose reveal">' + specs() + App.paras(p.body) + "</div>" +
 			(p.compare && p.photos && p.photos.length ? '<div class="after-gallery">' + gallery() + "</div>" : "") +
-			versions() + codePeek() + pager() + "</div>" +
+			versions() + codePeek() + contactBox() + pager() + "</div>" +
 			"</div></div>"
 		);
 	}

@@ -8,6 +8,12 @@ window.SITE = {
 	repo: "https://github.com/Tizio0o0o0o/SergioGugliandolo-Site",
 	siteUrl: "https://sergiogugliandolo.com",
 
+	/* ---------- how people reach me (home "Let's talk" + bottom of project pages) ---------- */
+	contact: {
+		telegram: "https://t.me/Tizio0o0o0o",
+		email: "gugliandolosergio@gmail.com",
+	},
+
 	/* ---------- top menu ---------- */
 	nav: [
 		{ id: "home", href: "home", label: { en: "Home", it: "Home" } },
@@ -101,6 +107,15 @@ window.SITE = {
 		nextProject: { en: "Next", it: "Successivo" },
 		zoom: { en: "Open full screen", it: "Apri a schermo intero" },
 		notFound: { en: "Project not found.", it: "Progetto non trovato." },
+		// box at the bottom of project pages (hide it with  contact: false  on a project)
+		similarEyebrow: { en: "Say hi", it: "Scrivimi" },
+		similarTitle: { en: "Building something similar?", it: "Stai costruendo qualcosa di simile?" },
+		similarText: {
+			en: "Questions, ideas, or a project of your own: write me. Telegram is the fastest way.",
+			it: "Domande, idee o un progetto tuo: scrivimi. Telegram è il modo più veloce.",
+		},
+		similarSubject: { en: "About your project: ", it: "A proposito del tuo progetto: " },
+		allLinks: { en: "All links", it: "Tutti i link" },
 	},
 
 	/* ---------- projects page ---------- */

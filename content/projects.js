@@ -17,6 +17,7 @@
      links     optional buttons: 3D model, PDF, code, external sites
      versions  optional step-by-step history (see the photo frame)
      compare   optional before/after slider at the top of the page (see BrainTex)
+     contact   false = no "Building something similar? Write me" box at the bottom
      code      optional raw file URL shown in a "peek at the code" box
 
    Writing tips for "body":
@@ -28,6 +29,7 @@ window.PROJECTS = [
 	/* ------------------------------------------------------------------ */
 	{
 		id: "braintex",
+		contact: false, // no "Building something similar?" box
 		status: "wip",
 		years: "2024 →",
 		featured: true, // big card at the top of the projects page
@@ -105,6 +107,7 @@ window.PROJECTS = [
 	/* ------------------------------------------------------------------ */
 	{
 		id: "reseq",
+		contact: false, // no "Building something similar?" box
 		home: true,
 		status: "solo",
 		years: "2022 – 2025",

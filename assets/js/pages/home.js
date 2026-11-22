@@ -132,8 +132,8 @@
 			'<section class="section-tight"><div class="wrap"><div class="card contact-band reveal">' +
 			'<div><span class="eyebrow">' + t(H.contactEyebrow) + "</span><h2>" + t(H.contactTitle) + "</h2><p>" + t(H.contactText) + "</p></div>" +
 			'<div class="btn-row">' +
-			'<a class="btn btn-primary" href="https://t.me/Tizio0o0o0o">' + icon("telegram") + "Telegram</a>" +
-			'<a class="btn" href="mailto:gugliandolosergio@gmail.com">' + icon("mail") + "Email</a>" +
+			'<a class="btn btn-primary" href="' + window.SITE.contact.telegram + '">' + icon("telegram") + "Telegram</a>" +
+			'<a class="btn" href="mailto:' + window.SITE.contact.email + '">' + icon("mail") + "Email</a>" +
 			'<a class="btn" href="' + url("links") + '">' + t(H.contactAll) + icon("arrowRight", "i-move") + "</a>" +
 			"</div></div></div></section>"
 		);
