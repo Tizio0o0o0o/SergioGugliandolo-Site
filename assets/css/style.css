@@ -598,7 +598,11 @@ main {
 .chip .count {
 	font-family: var(--font-mono);
 	font-size: 0.72rem;
-	opacity: 0.6;
+	color: var(--ink-3);
+}
+.chip[aria-pressed="true"] .count {
+	color: inherit;
+	opacity: 0.8;
 }
 .chips {
 	display: flex;
