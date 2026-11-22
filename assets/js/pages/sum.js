@@ -39,7 +39,12 @@
 			"</form>" +
 			'<p class="feedback" aria-live="polite">' + (state.feedback ? t(S.fb[state.feedback]) : "") + "</p>" +
 			(state.explained ? "" : '<button type="button" class="btn btn-sm" data-skip>' + t(S.skip) + "</button>") +
-			'<div class="prose explanation"' + (state.explained ? "" : " hidden") + ' style="margin-top:2rem">' + App.paras(S.explanation) + "</div>" +
+			'<div class="explanation"' + (state.explained ? "" : " hidden") + ' style="margin-top:2rem">' +
+			'<a class="skip-to-point" href="#why">' + t(S.skipToPoint) + "</a>" +
+			'<div class="prose">' + App.paras(S.explanation) + "</div>" +
+			'<p class="math-end">' + t(S.mathEnd) + "</p>" +
+			'<section id="why" class="why-card prose"><span class="eyebrow">' + t(S.whyEyebrow) + "</span>" + App.paras(S.why) + "</section>" +
+			"</div>" +
 			"</div></section>"
 		);
 	}

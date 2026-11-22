@@ -48,9 +48,6 @@ window.SUM = {
 			"<h3>…except it's not that simple either.</h3>",
 			'The Riemann zeta function is <math><mi>ζ</mi><mo>(</mo><mi>s</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><msup><mn>1</mn><mi>s</mi></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>2</mn><mi>s</mi></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>3</mn><mi>s</mi></msup></mfrac><mo>+</mo><mo>…</mo></math>, and that series only makes sense when Re(s) &gt; 1. Plug in s = −1 and you get 1 + 2 + 3 + …, which diverges. But there\'s a unique way to extend ζ to (almost) the whole complex plane, called <em>analytic continuation</em>, and that extended function gives ζ(−1) = −1/12. <a href="https://www.youtube.com/watch?v=YuIIjLr6vUA&t=2139s">This video</a> explains it beautifully.',
 			"So the sum of all natural numbers is not −1/12… even though, in a very precise sense, it is.",
-			"<h2>So why am I telling you all this?</h2>",
-			"Because it's the perfect description of my skill set. On paper it looks impossible. With the right tools, it kind of works. And the closer you look, the more interesting it gets.",
-			"// So yes: my skills? −0.08(3). Or at least I try.",
 		],
 		it: [
 			"<h2>Svelando −0,08(3)</h2>",
@@ -64,6 +61,20 @@ window.SUM = {
 			"<h3>…solo che non è neanche così semplice.</h3>",
 			'La funzione zeta di Riemann è <math><mi>ζ</mi><mo>(</mo><mi>s</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><msup><mn>1</mn><mi>s</mi></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>2</mn><mi>s</mi></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>3</mn><mi>s</mi></msup></mfrac><mo>+</mo><mo>…</mo></math>, e quella serie ha senso solo quando Re(s) &gt; 1. Metti s = −1 e ottieni 1 + 2 + 3 + …, che diverge. Però esiste un modo unico di estendere ζ a (quasi) tutto il piano complesso, chiamato <em>prolungamento analitico</em>, e quella funzione estesa dà ζ(−1) = −1/12. <a href="https://www.youtube.com/watch?v=YuIIjLr6vUA&t=2139s">Questo video</a> lo spiega benissimo.',
 			"Quindi la somma di tutti i numeri naturali non è −1/12… anche se, in un senso molto preciso, lo è.",
+		],
+	},
+
+	// The point of it all, in a highlighted box: easy to find for whoever skips the maths
+	skipToPoint: { en: "Too much maths? Skip to the point ↓", it: "Troppa matematica? Salta al punto ↓" },
+	mathEnd: { en: "End of the maths. You survived.", it: "Fine della matematica. Sei sopravvissuto." },
+	whyEyebrow: { en: "The point", it: "Il punto" },
+	why: {
+		en: [
+			"<h2>So why am I telling you all this?</h2>",
+			"Because it's the perfect description of my skill set. On paper it looks impossible. With the right tools, it kind of works. And the closer you look, the more interesting it gets.",
+			"// So yes: my skills? −0.08(3). Or at least I try.",
+		],
+		it: [
 			"<h2>E perché ti sto raccontando tutto questo?</h2>",
 			"Perché è la descrizione perfetta delle mie competenze. Sulla carta sembra impossibile. Con gli strumenti giusti, più o meno funziona. E più guardi da vicino, più diventa interessante.",
 			"// Quindi sì: le mie competenze? −0,08(3). O almeno ci provo.",

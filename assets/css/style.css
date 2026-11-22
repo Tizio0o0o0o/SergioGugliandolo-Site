@@ -2217,6 +2217,62 @@ a.chip {
 math {
 	font-size: 1.1em;
 }
+/* "skip the maths" link + the highlighted conclusion */
+.skip-to-point {
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	padding: 0.55rem 1rem;
+	border-radius: 999px;
+	background: var(--accent-soft);
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent);
+	color: var(--accent);
+	font-weight: 600;
+	font-size: 0.92rem;
+	text-decoration: none;
+	transition: transform 0.25s var(--ease);
+}
+.skip-to-point:hover {
+	text-decoration: none;
+	transform: translateY(2px);
+}
+.math-end {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 3rem 0 1.4rem;
+	font-family: var(--font-mono);
+	font-size: 0.74rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--ink-3);
+}
+.math-end::before,
+.math-end::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: var(--line-strong);
+}
+.why-card {
+	padding: clamp(1.5rem, 5vw, 2.6rem);
+	border-radius: var(--radius-lg);
+	background: linear-gradient(135deg, var(--accent-soft), var(--surface));
+	box-shadow: inset 0 0 0 2px var(--accent), var(--shadow-lg);
+}
+.why-card .eyebrow {
+	color: var(--accent);
+}
+.why-card h2 {
+	font-size: clamp(1.8rem, 4.6vw, 2.7rem);
+	margin: 0.6rem 0 1rem;
+}
+.why-card p {
+	font-size: 1.15rem;
+}
+.why-card .meme {
+	margin-bottom: 0;
+}
 
 /* ---------- 9h. 404 / blank ---------- */
 .error-page {
